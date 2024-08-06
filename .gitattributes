@@ -1,0 +1,10 @@
+# git-crypt
+
+# FileZilla
+/apps/FileZilla/*.xml filter=git-crypt diff=git-crypt
+
+# Git
+/apps/git/.gitconfig filter=git-crypt diff=git-crypt
+
+# OBS Studio
+/apps/OBS Studio/obs-studio/basic/profiles/**/basic.ini filter=git-crypt diff=git-crypt
