@@ -1,0 +1,1 @@
+junction Configurations => C:\Program Files (x86)\FanControl\Configurations
