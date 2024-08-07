@@ -1,0 +1,70 @@
+﻿# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+127.0.0.1       localhost
+::1             localhost
+
+# ----------------------
+# My Devices
+# ----------------------
+
+2604:3d09:8676:f900::3960 pi.hole pi-hole
+10.0.0.92                 pi.hole pi-hole
+
+#2604:3d09:8676:f900::52c7 desktop.local
+10.0.0.194                desktop.local
+
+#2604:3d09:8676:f900::d890 laptop.local
+10.0.0.132                laptop.local
+
+
+# ----------------------
+# Web-dev stuffs
+# ----------------------
+
+# Projects
+127.0.0.1 archive.local charterstone.local
+::1       archive.local charterstone.local
+
+# Apps / Self-hosted stuffs
+127.0.0.1 snippets.local
+::1       snippets.local
+
+# Sandboxes
+127.0.0.1 laravel.local phoenix.local wintercms.local wordpress.local
+::1       laravel.local phoenix.local wintercms.local wordpress.local
+
+
+# ----------------------
+# Docker Desktop
+# ----------------------
+
+
+
+# ----------------------
+# Adobe Bullshit
+# ----------------------
+
+127.0.0.1 cc-api-data.adobe.io ic.adobe.io genuine.adobe.com prod.adobegenuine.com assets.adobedtm.com
+# Added by Docker Desktop
+10.0.0.194 host.docker.internal
+10.0.0.194 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
