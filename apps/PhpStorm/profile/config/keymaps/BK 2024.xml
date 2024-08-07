@@ -1,0 +1,50 @@
+<keymap version="1" name="BK 2024" parent="$default">
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl back_quote" />
+  </action>
+  <action id="CloseAllEditors">
+    <keyboard-shortcut first-keystroke="shift ctrl w" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="EditorSelectLine">
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
+  <action id="EditorSelectWord" />
+  <action id="EditorUnSelectWord" />
+  <action id="MethodDown">
+    <keyboard-shortcut first-keystroke="shift alt down" />
+  </action>
+  <action id="MethodUp">
+    <keyboard-shortcut first-keystroke="shift alt up" />
+  </action>
+  <action id="MoveLineDown">
+    <keyboard-shortcut first-keystroke="alt down" />
+  </action>
+  <action id="MoveLineUp">
+    <keyboard-shortcut first-keystroke="alt up" />
+  </action>
+  <action id="MoveTabRight">
+    <keyboard-shortcut first-keystroke="shift alt right" />
+  </action>
+  <action id="NextTab">
+    <keyboard-shortcut first-keystroke="alt right" />
+    <keyboard-shortcut first-keystroke="ctrl tab" />
+  </action>
+  <action id="OpenFile">
+    <keyboard-shortcut first-keystroke="shift ctrl o" />
+  </action>
+  <action id="PreviousTab">
+    <keyboard-shortcut first-keystroke="alt left" />
+    <keyboard-shortcut first-keystroke="shift ctrl tab" />
+  </action>
+  <action id="QuickChangeScheme" />
+  <action id="ReopenClosedTab">
+    <keyboard-shortcut first-keystroke="shift ctrl t" />
+  </action>
+  <action id="SmartSelect" />
+  <action id="SmartUnSelect" />
+  <action id="TableResult.GrowSelection" />
+  <action id="TableResult.ShrinkSelection" />
+</keymap>

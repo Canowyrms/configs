@@ -1,0 +1,106 @@
+<application>
+  <component name="KeyPromoterXStatistic">
+    <option name="statistics">
+      <Statistic Action="Back">
+        <Item>
+          <IdeaActionID>Back</IdeaActionID>
+          <ShortCut>'Ctrl+Alt+Left'</ShortCut>
+          <Description>Back</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Go to Declaration or Usages">
+        <Item>
+          <IdeaActionID>GotoDeclaration</IdeaActionID>
+          <ShortCut>'Ctrl+B'</ShortCut>
+          <Description>Go to Declaration or Usages</Description>
+          <Count>1</Count>
+          <Hit>10</Hit>
+        </Item>
+      </Statistic>
+      <Statistic Action="Split and Move Right">
+        <Item>
+          <IdeaActionID>MoveTabRight</IdeaActionID>
+          <ShortCut>'Alt+Shift+Right'</ShortCut>
+          <Description>Split and Move Right</Description>
+          <Count>1</Count>
+          <Hit>1</Hit>
+        </Item>
+      </Statistic>
+    </option>
+    <option name="suppressed">
+      <Statistic Action="Bookmarks">
+        <Item>
+          <IdeaActionID>ActivateBookmarksToolWindow</IdeaActionID>
+          <ShortCut>'Alt+2'</ShortCut>
+          <Description>Bookmarks</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Open...">
+        <Item>
+          <IdeaActionID>OpenFile</IdeaActionID>
+          <ShortCut>'Ctrl+Shift+O'</ShortCut>
+          <Description>Open...</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Problems">
+        <Item>
+          <IdeaActionID>ActivateProblemsViewToolWindow</IdeaActionID>
+          <ShortCut>'Alt+6'</ShortCut>
+          <Description>Problems</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Project">
+        <Item>
+          <IdeaActionID>ActivateProjectToolWindow</IdeaActionID>
+          <ShortCut>'Alt+1'</ShortCut>
+          <Description>Project</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Remove from Recent Projects…">
+        <Item>
+          <IdeaActionID>WelcomeScreen.RemoveSelected</IdeaActionID>
+          <ShortCut>'Delete'</ShortCut>
+          <Description>Remove from Recent Projects…</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Settings...">
+        <Item>
+          <IdeaActionID>ShowSettings</IdeaActionID>
+          <ShortCut>'Ctrl+Alt+S'</ShortCut>
+          <Description>Settings...</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Structure">
+        <Item>
+          <IdeaActionID>ActivateStructureToolWindow</IdeaActionID>
+          <ShortCut>'Alt+7'</ShortCut>
+          <Description>Structure</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Terminal">
+        <Item>
+          <IdeaActionID>ActivateTerminalToolWindow</IdeaActionID>
+          <ShortCut>'Ctrl+`'</ShortCut>
+          <Description>Terminal</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Version Control">
+        <Item>
+          <IdeaActionID>ActivateVersionControlToolWindow</IdeaActionID>
+          <ShortCut>'Alt+9'</ShortCut>
+          <Description>Version Control</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+    </option>
+  </component>
+</application>

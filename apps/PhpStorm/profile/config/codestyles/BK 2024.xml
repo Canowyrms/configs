@@ -1,0 +1,189 @@
+<code_scheme name="BK 2024" version="173">
+  <option name="OTHER_INDENT_OPTIONS">
+    <value>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </value>
+  </option>
+  <option name="LINE_SEPARATOR" value="&#10;" />
+  <option name="FORMATTER_ON_TAG" value="@fmt:on" />
+  <option name="FORMATTER_OFF_TAG" value="@fmt:off" />
+  <CssCodeStyleSettings>
+    <option name="HEX_COLOR_LOWER_CASE" value="true" />
+    <option name="KEEP_SINGLE_LINE_BLOCKS" value="true" />
+    <option name="USE_DOUBLE_QUOTES" value="false" />
+    <option name="ENFORCE_QUOTES_ON_FORMAT" value="true" />
+  </CssCodeStyleSettings>
+  <HTMLCodeStyleSettings>
+    <option name="HTML_UNIFORM_INDENT" value="true" />
+    <option name="HTML_ELEMENTS_TO_REMOVE_NEW_LINE_BEFORE" value="" />
+    <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,body,script,style,thead,tbody,tfoot" />
+    <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea" />
+  </HTMLCodeStyleSettings>
+  <JSCodeStyleSettings version="0">
+    <option name="FORCE_SEMICOLON_STYLE" value="true" />
+    <option name="FORCE_QUOTE_STYlE" value="true" />
+    <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
+    <option name="IMPORTS_WRAP" value="0" />
+    <option name="SPACES_WITHIN_IMPORTS" value="true" />
+    <option name="IMPORT_PREFER_ABSOLUTE_PATH" value="TRUE" />
+  </JSCodeStyleSettings>
+  <PHPCodeStyleSettings>
+    <option name="COMMA_AFTER_LAST_ARRAY_ELEMENT" value="true" />
+    <option name="COMMA_AFTER_LAST_PARAMETER" value="true" />
+    <option name="PHPDOC_BLANK_LINE_BEFORE_TAGS" value="true" />
+    <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
+    <option name="LOWER_CASE_BOOLEAN_CONST" value="true" />
+    <option name="LOWER_CASE_NULL_CONST" value="true" />
+    <option name="ELSE_IF_STYLE" value="SEPARATE" />
+    <option name="VARIABLE_NAMING_STYLE" value="CAMEL_CASE" />
+    <option name="BLANK_LINES_BEFORE_RETURN_STATEMENT" value="1" />
+    <option name="FORCE_SHORT_DECLARATION_ARRAY_STYLE" value="true" />
+  </PHPCodeStyleSettings>
+  <ScssCodeStyleSettings>
+    <option name="HEX_COLOR_LOWER_CASE" value="true" />
+    <option name="KEEP_SINGLE_LINE_BLOCKS" value="true" />
+    <option name="USE_DOUBLE_QUOTES" value="false" />
+    <option name="ENFORCE_QUOTES_ON_FORMAT" value="true" />
+  </ScssCodeStyleSettings>
+  <SqlCodeStyleSettings version="7">
+    <option name="KEYWORD_CASE" value="2" />
+    <option name="TABLE_OPENING" value="1" />
+    <option name="TABLE_CONTENT" value="2" />
+    <option name="TABLE_CLOSING" value="2" />
+  </SqlCodeStyleSettings>
+  <TypeScriptCodeStyleSettings version="0">
+    <option name="FORCE_SEMICOLON_STYLE" value="true" />
+    <option name="FORCE_QUOTE_STYlE" value="true" />
+    <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
+    <option name="IMPORTS_WRAP" value="0" />
+    <option name="SPACES_WITHIN_IMPORTS" value="true" />
+  </TypeScriptCodeStyleSettings>
+  <codeStyleSettings language="Blade">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="CSS">
+    <option name="BLOCK_COMMENT_ADD_SPACE" value="true" />
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Gherkin">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="HTML">
+    <option name="BLOCK_COMMENT_ADD_SPACE" value="true" />
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JSON">
+    <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JavaScript">
+    <option name="BLOCK_COMMENT_ADD_SPACE" value="true" />
+    <option name="EXTENDS_KEYWORD_WRAP" value="2" />
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="LESS">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Markdown">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="PHP">
+    <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
+    <option name="CLASS_BRACE_STYLE" value="1" />
+    <option name="METHOD_BRACE_STYLE" value="1" />
+    <option name="SPACE_AFTER_TYPE_CAST" value="true" />
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="SASS">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="SCSS">
+    <option name="BLOCK_COMMENT_ADD_SPACE" value="true" />
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="SQL">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Shell Script">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Twig">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="TypeScript">
+    <option name="EXTENDS_KEYWORD_WRAP" value="2" />
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Vue">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="4" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="XML">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="yaml">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="4" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>

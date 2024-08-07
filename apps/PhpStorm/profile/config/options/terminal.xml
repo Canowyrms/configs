@@ -1,0 +1,13 @@
+<application>
+  <component name="BlockTerminalUsage">
+    <option name="feedbackNotificationShown" value="true" />
+    <shellToExecutedCommandsNumber>
+      <entry key="powershell" value="15" />
+    </shellToExecutedCommandsNumber>
+  </component>
+  <component name="TerminalOptionsProvider">
+    <option name="myShellPath" value="C:\Program Files\PowerShell\7\pwsh.exe" />
+    <option name="mySoundBell" value="false" />
+    <option name="myTabName" value="" />
+  </component>
+</application>

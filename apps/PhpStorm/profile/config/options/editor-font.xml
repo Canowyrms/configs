@@ -1,0 +1,10 @@
+<application>
+  <component name="DefaultFont">
+    <option name="VERSION" value="1" />
+    <option name="FONT_FAMILY" value="FiraCode Nerd Font" />
+    <option name="FONT_REGULAR_SUB_FAMILY" value="Retina" />
+    <option name="LINE_SPACING" value="1.3" />
+    <option name="USE_LIGATURES" value="true" />
+    <option name="SECONDARY_FONT_FAMILY" value="Fira Code" />
+  </component>
+</application>
