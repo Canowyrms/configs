@@ -1,0 +1,11 @@
+# Linux
+
+copy Common/nano-syntax-highlighting => /usr/share/nano/nano-syntax-highlighting
+
+---
+
+# Windows
+
+junction Common/nano-syntax-highlighting => C:\Users\BK\.config\nano\nano-syntax-highlighting
+
+hardlink Windows/.nanorc <=> C:\Users\BK\.nanorc
