@@ -1,0 +1,1 @@
+hardlink starship.toml <=> C:\Users\BK\.config\starship.toml
