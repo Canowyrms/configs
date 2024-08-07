@@ -1,0 +1,9 @@
+# Linux
+
+copy Linux/wsl.conf => /etc/wsl.conf
+
+---
+
+# Windows
+
+hardlink Windows/.wslconfig <=> C:\Users\BK\.wslconfig

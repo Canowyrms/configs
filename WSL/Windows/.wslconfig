@@ -1,0 +1,11 @@
+# For WSL2
+# https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configuration-setting-for-wslconfig
+
+[wsl2]
+#dnsTunneling = true
+#firewall = true
+#networkingMode = mirrored
+
+[experimental]
+autoMemoryReclaim = gradual
+sparseVhd = true
