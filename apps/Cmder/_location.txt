@@ -1,0 +1,1 @@
+junction config => C:\Users\BK\scoop\persist\cmder\config
