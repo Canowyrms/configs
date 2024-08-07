@@ -1,0 +1,1 @@
+junction obs-studio => C:\Users\BK\AppData\Roaming\obs-studio
