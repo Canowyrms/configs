@@ -1,0 +1,81 @@
+[Master]
+Implementation=2
+FontFace=Unispace
+FontHeight=-9
+FontWeight=400
+ZoomRatio=2
+[Settings]
+Name=
+RefreshPeriod=1000
+EmbeddedImage=
+PingAddr=
+[General]
+Sources=6
+Tables=0
+Layers=3
+[Source0]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source1]
+Name=RAM usage percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage percent
+[Source2]
+Name=GPU1 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source3]
+Name=GPU1 power
+Units=W
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 power
+[Source4]
+Name=GPU1 power percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 power percent
+[Source5]
+Name=GPU1 memory usage percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory usage percent
+[Layer0]
+Name=
+Text=Framerate\n<G=Framerate> <FR> FPS\nFrametime\n<G=Frametime> <FT> ms
+PositionX=0
+PositionY=0
+ExtentX=-27
+ExtentY=-6
+ExtentOrigin=0
+[Layer1]
+Name=
+Text=GPU1 usage\n<G=GPU1 usage> %GPU1 usage% %\nGPU1 memory usage percent\n<G=GPU1 memory usage percent> %GPU1 memory usage percent% %
+PositionX=0
+PositionY=-6
+ExtentX=-27
+ExtentY=-6
+ExtentOrigin=0
+[Layer2]
+Name=
+Text=GPU1 power\n<G=GPU1 power> %GPU1 power% W\nGPU1 power percent\n<G=GPU1 power percent> %GPU1 power percent% %
+PositionX=0
+PositionY=-12
+ExtentX=-27
+ExtentY=-6
+ExtentOrigin=0
