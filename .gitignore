@@ -49,3 +49,5 @@
 
 # VSCode
 /apps/VSCode/User/*
+!/apps/VSCode/User/keybindings.json
+!/apps/VSCode/User/settings.json
