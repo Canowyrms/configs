@@ -1,0 +1,111 @@
+{
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "redhat.vscode-xml"
+	},
+
+	"breadcrumbs.symbolSortOrder": "name",
+
+	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.maxComputationTime": 0,
+
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.codeLens": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.find.seedSearchStringFromSelection": "selection",
+	"editor.fontFamily": "'FiraCode Nerd Font', 'Fira Code', Consolas, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.showSlider": "always",
+	"editor.renderWhitespace": "all",
+	"editor.wordWrap": "on",
+
+	"explorer.autoReveal": "focusNoScroll",
+	"explorer.openEditors.minVisible": 10,
+	"explorer.openEditors.visible": 10,
+	
+	"emmet.includeLanguages": {
+		"twig": "html"
+	},
+
+	"extensions.ignoreRecommendations": true,
+	
+	"files.associations": {
+		"*bashrc": "shellscript",
+		"*.bash*": "shellscript",
+		"*caddyfile": "ini",
+		"*.curlrc": "shellscript",
+		"*.env.example": "properties",
+		"*.icls": "xml",
+		"*inputrc": "shellscript",
+		"*.module": "php",
+		"*nanorc": "shellscript",
+		"*profile": "shellscript",
+		"*.wsb": "xml"
+	},
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 3000,
+	"files.eol": "\n",
+
+	"git.openRepositoryInParentFolders": "never",
+
+	"gitlens.hovers.currentLine.details": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.codeLens.enabled": false,
+	"gitlens.defaultDateLocale": "en-CA",
+	"gitlens.defaultDateShortFormat": null,
+	"gitlens.defaultDateFormat": null,
+	"gitlens.plusFeatures.enabled": false,
+	"gitlens.telemetry.enabled": false,
+	"gitlens.views.commitDetails.files.layout": "tree",
+	
+	"markdown.preview.fontFamily": "'Noto Serif', system-ui, sans-serif",
+	"markdown.preview.fontSize": 16,
+
+	"outline.collapseItems": "alwaysCollapse",
+
+	"php.executablePath": "C:\\Users\\BK\\scoop\\apps\\php\\current\\php.exe",
+	"php.validate.enable": true,
+	"php.validate.run": "onType",
+	"php.version": "8.0",
+
+	"powershell.integratedConsole.showOnStartup": false,
+	"powershell.promptToUpdatePowerShell": false,
+
+	"prettier.useTabs": true,
+
+	"redhat.telemetry.enabled": false,
+
+	"scm.defaultViewMode": "tree",
+
+	"security.allowedUNCHosts": [
+		"bk-desktop",
+		"bk-laptop"
+	],
+	"security.workspace.trust.emptyWindow": false,
+	"security.workspace.trust.enabled": false,
+	"security.workspace.trust.untrustedFiles": "open",
+
+	"telemetry.telemetryLevel": "off",
+
+	"terminal.integrated.confirmOnExit": "hasChildProcesses",
+	"terminal.integrated.confirmOnKill": "always",
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.fontFamily": "'FiraCode NF Retina', 'Fira Code Retina', 'Fira Code', Consolas, 'Courier New', monospace",
+	"terminal.integrated.fontWeight": "normal",
+	"terminal.integrated.lineHeight": 1.15,
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"terminal.integrated.tabs.location": "left",
+	
+	"workbench.editor.focusRecentEditorAfterClose": false,
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.view.alwaysShowHeaderActions": true,
+	"workbench.iconTheme": "vscode-icons",
+}

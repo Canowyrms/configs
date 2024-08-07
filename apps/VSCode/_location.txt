@@ -1,0 +1,2 @@
+hardlink keybindings.json => C:\Users\BK\AppData\Roaming\Code\User\keybindings.json
+hardlink settings.json    => C:\Users\BK\AppData\Roaming\Code\User\settings.json
