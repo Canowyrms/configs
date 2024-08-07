@@ -1,0 +1,118 @@
+{
+  "### Accel modes ###": "classic | jump | natural | motivity | power | lut | noaccel",
+  "### Cap modes ###": "in_out | input | output",
+  "version": "1.6.1",
+  "defaultDeviceConfig": {
+    "disable": true,
+    "DPI (normalizes sens to 1000dpi and converts input speed unit: counts/ms -> in/s)": 0,
+    "Polling rate Hz (keep at 0 for automatic adjustment)": 0
+  },
+  "profiles": [
+    {
+      "name": "default",
+      "Whole/combined accel (set false for 'by component' mode)": true,
+      "lpNorm": 2.0,
+      "Stretches domain for horizontal vs vertical inputs": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "Stretches accel range for horizontal vs vertical inputs": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "Whole or horizontal accel parameters": {
+        "mode": "jump",
+        "Gain / Velocity": true,
+        "inputOffset": 0.0,
+        "outputOffset": 0.0,
+        "acceleration": 0.005,
+        "decayRate": 0.1,
+        "growthRate": 1.0,
+        "motivity": 1.5,
+        "exponentClassic": 2.0,
+        "scale": 1.0,
+        "exponentPower": 0.05,
+        "limit": 1.5,
+        "midpoint": 5.0,
+        "smooth": 1.0,
+        "Cap / Jump": {
+          "x": 8.0,
+          "y": 1.75
+        },
+        "Cap mode": "output",
+        "data": []
+      },
+      "Vertical accel parameters": {
+        "mode": "noaccel",
+        "Gain / Velocity": true,
+        "inputOffset": 0.0,
+        "outputOffset": 0.0,
+        "acceleration": 0.005,
+        "decayRate": 0.1,
+        "growthRate": 1.0,
+        "motivity": 1.5,
+        "exponentClassic": 2.0,
+        "scale": 1.0,
+        "exponentPower": 0.05,
+        "limit": 1.5,
+        "midpoint": 5.0,
+        "smooth": 0.5,
+        "Cap / Jump": {
+          "x": 15.0,
+          "y": 1.5
+        },
+        "Cap mode": "output",
+        "data": []
+      },
+      "Sensitivity multiplier": 1.0,
+      "Y/X sensitivity ratio (vertical sens multiplier)": 1.0,
+      "L/R sensitivity ratio (left sens multiplier)": 1.0,
+      "U/D sensitivity ratio (up sens multiplier)": 1.0,
+      "Degrees of rotation": 0.0,
+      "Degrees of angle snapping": 0.0,
+      "Input Speed Cap": 0.0
+    }
+  ],
+  "devices": [
+    {
+      "name": "Logitech USB Receiver",
+      "profile": "default",
+      "id": "HID\\VID_046D&PID_C52B&MI_01&Col01",
+      "config": {
+        "disable": false,
+        "DPI (normalizes sens to 1000dpi and converts input speed unit: counts/ms -> in/s)": 0,
+        "Polling rate Hz (keep at 0 for automatic adjustment)": 0
+      }
+    },
+    {
+      "name": "Logitech USB Receiver",
+      "profile": "default",
+      "id": "HID\\VID_046D&PID_C539&MI_01&Col01",
+      "config": {
+        "disable": false,
+        "DPI (normalizes sens to 1000dpi and converts input speed unit: counts/ms -> in/s)": 0,
+        "Polling rate Hz (keep at 0 for automatic adjustment)": 0
+      }
+    },
+    {
+      "name": "Logitech G703 LIGHTSPEED Wireless Gaming Mouse w/ HERO",
+      "profile": "default",
+      "id": "HID\\VID_046D&PID_C090&MI_00",
+      "config": {
+        "disable": false,
+        "DPI (normalizes sens to 1000dpi and converts input speed unit: counts/ms -> in/s)": 1250,
+        "Polling rate Hz (keep at 0 for automatic adjustment)": 1000
+      }
+    },
+    {
+      "name": "pulsar Xlite V3",
+      "profile": "default",
+      "id": "HID\\VID_3554&PID_F508&MI_02",
+      "config": {
+        "disable": false,
+        "DPI (normalizes sens to 1000dpi and converts input speed unit: counts/ms -> in/s)": 0,
+        "Polling rate Hz (keep at 0 for automatic adjustment)": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+hardlink settings.json <=> C:\Users\BK\AppData\Local\Programs\RawAccel\settings.json
