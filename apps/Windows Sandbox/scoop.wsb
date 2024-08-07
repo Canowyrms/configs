@@ -1,0 +1,21 @@
+<Configuration>
+	<vGPU>Enable</vGPU>
+	<ClipboardRedirection>Default</ClipboardRedirection>
+	<MemoryInMB>8192</MemoryInMB>
+	<MappedFolders>
+		<MappedFolder>
+			<HostFolder>C:\Users\BK\code\configs-2024\apps\Windows Sandbox</HostFolder>
+			<SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\Sandbox</SandboxFolder>
+			<ReadOnly>true</ReadOnly>
+		</MappedFolder>
+		<MappedFolder>
+			<HostFolder>C:\Users\BK\Downloads</HostFolder>
+			<SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\HostDownloads</SandboxFolder>
+			<ReadOnly>true</ReadOnly>
+		</MappedFolder>
+	</MappedFolders>
+	<LogonCommand>
+		<!-- this is using the mapped sandbox folder. -->
+		<Command>C:\Users\WDAGUtilityAccount\Desktop\Sandbox\scoop.cmd</Command>
+	</LogonCommand>
+</Configuration>
