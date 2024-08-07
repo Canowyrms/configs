@@ -1,0 +1,2 @@
+hardlink .gitconfig <=> C:\Users\BK\.gitconfig
+hardlink .gitignore <=> C:\Users\BK\.gitignore
