@@ -1,0 +1,1 @@
+hardlink .curlrc <=> C:\Users\BK\.curlrc
