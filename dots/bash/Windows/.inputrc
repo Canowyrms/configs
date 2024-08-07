@@ -1,0 +1,49 @@
+$include /etc/inputrc
+
+
+# ----------------------
+# Custom
+# https://www.topbug.net/blog/2017/07/31/inputrc-for-humans/
+# ----------------------
+
+## This line sets readline to display possible completions using different
+## colors to indicate their file types. The colors are determined by the
+## environmental variable LS_COLORS.
+set colored-stats on
+
+## This line sets auto completion to ignore cases.
+set completion-ignore-case on
+
+## This line sets 3 to be the maximum number of characters to be the common
+## prefix to display for completions. If the common prefix has more than 3
+## characters, they are replaced by ellipsis. For example, assume we are in
+## a directory with files Screenshot_20170730.png and Screenshot_20170731.png.
+## If using the default option, an auto completion prints
+## Screenshot_20170730.png Screenshot_20170731.png.
+## If this option is set, then the auto completion prints ...0.png ...1.png.
+set completion-prefix-display-length 3
+
+## Sets the completions to be listed immediately instead of ringing the
+## bell when the completing word has more than one possible completion.
+set show-all-if-ambiguous on
+
+## Sets the completions to be listed immediately instead of ringing the bell
+## when the completing word has more than one possible completion but no partial
+## completion can be made.
+set show-all-if-unmodified on
+
+## Be more intelligent when autocompleting by also looking at the text after
+## the cursor. For example, when the current line is "cd ~/src/mozil", and
+## the cursor is on the "z", pressing Tab will not autocomplete it to "cd
+## ~/src/mozillail", but to "cd ~/src/mozilla". (This is supported by the
+# Readline used by Bash 4.)
+set skip-completed-text on
+
+## Sets completions to be appended by characters that indicate their
+## file types reported by the stat system call.
+set visible-stats on
+
+## Delete previous whole-word.
+"\C-H": backward-kill-word           # Ctrl-Backspace
+
+# End Custom -----------

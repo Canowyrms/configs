@@ -1,0 +1,21 @@
+# Linux
+
+copy Common/completions/* => /etc/bash_completions.d/
+
+copy Linux/.bashrc      => /home/<user>/.bashrc
+copy Linux/.bash_logout => /home/<user>/.bash_logout
+
+---
+
+# Windows
+
+junction Common/completions     =>  C:\Users\BK\bash_completion.d
+
+hardlink Common/.bash_aliases   <=> C:\Users\BK\.bash_aliases
+hardlink Common/.bash_functions <=> C:\Users\BK\.bash_functions
+
+hardlink Windows/.bash_profile  <=> C:\Users\BK\.bash_profile
+hardlink Windows/.bashrc        <=> C:\Users\BK\.bashrc
+hardlink Windows/.inputrc       <=> C:\Users\BK\.inputrc
+
+hardlink Windows/.config/git/git-prompt.sh <=> C:\Users\BK\.config\git\git-prompt.sh

@@ -1,0 +1,116 @@
+# /etc/inputrc - global inputrc for libreadline
+# See readline(3readline) and `info rluserman' for more information.
+
+
+# ----------------------
+# Custom
+# https://www.topbug.net/blog/2017/07/31/inputrc-for-humans/
+# ----------------------
+
+## This line sets readline to display possible completions using different
+## colors to indicate their file types. The colors are determined by the
+## environmental variable LS_COLORS.
+set colored-stats on
+
+## This line sets auto completion to ignore cases.
+set completion-ignore-case on
+
+## This line sets 3 to be the maximum number of characters to be the common
+## prefix to display for completions. If the common prefix has more than 3
+## characters, they are replaced by ellipsis. For example, assume we are in
+## a directory with files Screenshot_20170730.png and Screenshot_20170731.png.
+## If using the default option, an auto completion prints
+## Screenshot_20170730.png Screenshot_20170731.png.
+## If this option is set, then the auto completion prints ...0.png ...1.png.
+set completion-prefix-display-length 3
+
+## Sets the completions to be listed immediately instead of ringing the
+## bell when the completing word has more than one possible completion.
+set show-all-if-ambiguous on
+
+## Sets the completions to be listed immediately instead of ringing the bell
+## when the completing word has more than one possible completion but no partial
+## completion can be made.
+set show-all-if-unmodified on
+
+## Be more intelligent when autocompleting by also looking at the text after
+## the cursor. For example, when the current line is "cd ~/src/mozil", and
+## the cursor is on the "z", pressing Tab will not autocomplete it to "cd
+## ~/src/mozillail", but to "cd ~/src/mozilla". (This is supported by the
+# Readline used by Bash 4.)
+set skip-completed-text on
+
+## Sets completions to be appended by characters that indicate their
+## file types reported by the stat system call.
+set visible-stats on
+
+# ctrl+backspace - delete previous whole-word
+"\C-h": backward-kill-word
+
+# End Custom -----------
+
+
+# Be 8 bit clean.
+set input-meta on
+set output-meta on
+
+# To allow the use of 8bit-characters like the german umlauts, uncomment
+# the line below. However this makes the meta key not work as a meta key,
+# which is annoying to those which don't need to type in 8-bit characters.
+
+# set convert-meta off
+
+# try to enable the application keypad when it is called.  Some systems
+# need this to enable the arrow keys.
+# set enable-keypad on
+
+# see /usr/share/doc/bash/inputrc.arrows for other codes of arrow keys
+
+# do not bell on tab-completion
+# set bell-style none
+# set bell-style visible
+
+# some defaults / modifications for the emacs mode
+$if mode=emacs
+
+# allow the use of the Home/End keys
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+
+# allow the use of the Delete/Insert keys
+"\e[3~": delete-char
+"\e[2~": quoted-insert
+
+# mappings for "page up" and "page down" to step to the beginning/end
+# of the history
+# "\e[5~": beginning-of-history
+# "\e[6~": end-of-history
+
+# alternate mappings for "page up" and "page down" to search the history
+# "\e[5~": history-search-backward
+# "\e[6~": history-search-forward
+
+# mappings for Ctrl-left-arrow and Ctrl-right-arrow for word moving
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
+$if term=rxvt
+"\e[7~": beginning-of-line
+"\e[8~": end-of-line
+"\eOc": forward-word
+"\eOd": backward-word
+$endif
+
+# for non RH/Debian xterm, can't hurt for RH/Debian xterm
+# "\eOH": beginning-of-line
+# "\eOF": end-of-line
+
+# for freebsd console
+# "\e[H": beginning-of-line
+# "\e[F": end-of-line
+
+$endif
