@@ -1,0 +1,1 @@
+hardlink config.yaml <=> C:\Users\BK\.config\lsd\config.yaml
