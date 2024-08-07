@@ -1,0 +1,1 @@
+hardlink bzexcluderules_editable.xml <=> C:\ProgramData\Backblaze\bzdata\bzexcluderules_editable.xml
