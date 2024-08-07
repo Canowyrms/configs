@@ -1,0 +1,2 @@
+junction portable_config => C:\Users\BK\scoop\persist\mpv\portable_config
+junction portable_config => C:\Users\BK\AppData\Roaming\mpv
