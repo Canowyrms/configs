@@ -34,15 +34,6 @@ function nicepath () {
 }
 
 
-# Start a PHP server in cwd, optionally specifying the port.
-# ----------------------
-
-function phpserver () {
-	local port="${1:-3000}";
-	php -S "localhost:${port}";
-}
-
-
 # Print working directory in Windows format.
 # ----------------------
 
@@ -57,4 +48,22 @@ function pwdw () {
 
 function start-mailpit () {
 	mailpit.exe -d "C:\Users\BK\mailpit.db" -v
+}
+
+
+# Start PHP-CGI, optionally specifying the port.
+# ----------------------
+
+function start-phpcgi () {
+	local port="${1:-9000}";
+	php-cgi -b "localhost:${port}";
+}
+
+
+# Start a PHP dev server in cwd, optionally specifying the port.
+# ----------------------
+
+function start-phpserver () {
+	local port="${1:-3000}";
+	php -S "localhost:${port}";
 }
