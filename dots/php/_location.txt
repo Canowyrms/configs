@@ -1,0 +1,1 @@
+hardlink php.ini <=> C:\Users\BK\scoop\persist\php\cli\php.ini
