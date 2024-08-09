@@ -55,6 +55,11 @@
 # Docker Desktop
 # ----------------------
 
+# Added by Docker Desktop
+#10.0.0.194 host.docker.internal gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+#127.0.0.1 kubernetes.docker.internal
+# End of section
 
 
 # ----------------------
@@ -62,9 +67,3 @@
 # ----------------------
 
 127.0.0.1 cc-api-data.adobe.io ic.adobe.io genuine.adobe.com prod.adobegenuine.com assets.adobedtm.com
-# Added by Docker Desktop
-10.0.0.194 host.docker.internal
-10.0.0.194 gateway.docker.internal
-# To allow the same kube context to work on the host and the container:
-127.0.0.1 kubernetes.docker.internal
-# End of section
