@@ -1,1 +1,0 @@
-junction profile => C:\Users\BK\scoop\persist\phpstorm\profile

@@ -20,30 +20,6 @@
 /apps/OBS Studio/obs-studio/basic/**/*.bak
 /apps/OBS Studio/obs-studio/basic/**/service.json
 
-# PhpStorm
-/apps/PhpStorm/profile/*
-
-!/apps/PhpStorm/profile/config/
-/apps/PhpStorm/profile/config/*
-!/apps/PhpStorm/profile/config/disabled_plugins.txt
-!/apps/PhpStorm/profile/config/codestyles/
-!/apps/PhpStorm/profile/config/colors/
-!/apps/PhpStorm/profile/config/keymaps/
-
-!/apps/PhpStorm/profile/config/options/
-/apps/PhpStorm/profile/config/options/*
-!/apps/PhpStorm/profile/config/options/code.style.schemes*
-!/apps/PhpStorm/profile/config/options/colors.scheme.xml
-!/apps/PhpStorm/profile/config/options/editor.xml
-!/apps/PhpStorm/profile/config/options/editor-font.xml
-!/apps/PhpStorm/profile/config/options/gutter.xml
-!/apps/PhpStorm/profile/config/options/KeyPromoterXStatistic.xml
-!/apps/PhpStorm/profile/config/options/terminal.xml
-
-!/apps/PhpStorm/profile/config/options/windows/
-/apps/PhpStorm/profile/config/options/windows/*
-!/apps/PhpStorm/profile/config/options/windows/keymap.xml
-
 # SVP
 /apps/SVP/settings/*.lic
 

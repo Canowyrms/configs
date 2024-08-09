@@ -1,0 +1,4 @@
+hardlink codestyles/* <=> C:\Users\BK\scoop\persist\< IDE >\profile\config\codestyles\*
+hardlink colors/*     <=> C:\Users\BK\scoop\persist\< IDE >\profile\config\colors\*
+hardlink keymaps/*    <=> C:\Users\BK\scoop\persist\< IDE >\profile\config\keymaps\*
+hardlink options/*    <=> C:\Users\BK\scoop\persist\< IDE >\profile\config\options\*
