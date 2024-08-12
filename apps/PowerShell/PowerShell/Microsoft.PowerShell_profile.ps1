@@ -38,6 +38,9 @@ if (Test-Path($ddev)) { . $ddev }
 $ripgrep = "$MyScripts\ripgrep_completion.ps1"
 if (Test-Path($ripgrep)) { . $ripgrep }
 
+$roadrunner = "$MyScripts\roadrunner_completion.ps1"
+if (Test-Path($roadrunner)) { . $roadrunner }
+
 
 # ----------------------
 # Zoxide
