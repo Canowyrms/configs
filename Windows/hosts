@@ -43,8 +43,8 @@
 ::1       archive.local charterstone.local
 
 # Apps / Self-hosted stuffs
-127.0.0.1 snippets.local
-::1       snippets.local
+127.0.0.1 5e.tools.local snippets.local
+::1       5e.tools.local snippets.local
 
 # Sandboxes
 127.0.0.1 laravel.local phoenix.local wintercms.local wordpress.local
