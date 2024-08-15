@@ -27,3 +27,7 @@
 /apps/VSCode/User/*
 !/apps/VSCode/User/keybindings.json
 !/apps/VSCode/User/settings.json
+
+# Windows Terminal
+/apps/Windows Terminal/LocalState/*
+!/apps/Windows Terminal/LocalState/settings.json

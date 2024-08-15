@@ -138,11 +138,19 @@
                 "startingDirectory": "~"
             },
             {
-                "commandline": "C:\\Program Files\\nu\\bin\\nu.exe",
+                "commandline": "C:\\Users\\BK\\scoop\\apps\\nu\\current\\nu.exe",
+                "elevate": false,
+                "guid": "{9e538019-c5e1-4dc9-8892-6bcfbd185111}",
+                "hidden": false,
+                "icon": "C:\\Users\\BK\\Pictures\\Icons\\nu-shell.ico",
+                "name": "Nushell"
+            },
+            {
+                "commandline": "C:\\Users\\BK\\scoop\\apps\\nu\\current\\nu.exe",
                 "elevate": true,
                 "guid": "{e9982591-993d-4fdb-a700-16c6b95095f5}",
                 "hidden": false,
-                "icon": "C:\\Program Files\\nu\\nu.ico",
+                "icon": "C:\\Users\\BK\\Pictures\\Icons\\nu-shell.ico",
                 "name": "Nushell (admin)"
             },
             {
@@ -193,13 +201,6 @@
                 "icon": "C:\\Users\\BK\\Pictures\\Icons\\ubuntu.ico",
                 "name": "Ubuntu",
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
-                "guid": "{a986c93d-4977-5b10-81e1-d5293086b66a}",
-                "hidden": false,
-                "name": "TEMP_Ubuntu",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "~"
             }
         ]
     },
