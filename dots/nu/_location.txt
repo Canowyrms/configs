@@ -1,0 +1,2 @@
+hardlink config.nu <=> C:\Users\BK\AppData\Roaming\nushell\config.nu
+hardlink env.nu <=> C:\Users\BK\AppData\Roaming\nushell\env.nu
