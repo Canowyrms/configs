@@ -9,6 +9,10 @@
 # FileZilla
 /apps/FileZilla/config/queue.sqlite3
 
+# LosslessCut
+/apps/LosslessCut/LosslessCut/*
+!/apps/LosslessCut/LosslessCut/config.json
+
 # MPV
 /apps/mpv/portable_config/cache/
 /apps/mpv/portable_config/watch_later/

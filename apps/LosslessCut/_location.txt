@@ -1,1 +1,1 @@
-hardlink config.json <=> C:\Users\BK\AppData\Roaming\LosslessCut
+junction LosslessCut <=> C:\Users\BK\AppData\Roaming\LosslessCut

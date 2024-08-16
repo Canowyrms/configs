@@ -255,8 +255,8 @@
 	"cleanupChoices": {
 		"trashTmpFiles": true,
 		"askForCleanup": false,
-		"trashProjectFile": true,
-		"trashSourceFile": true,
+		"trashProjectFile": false,
+		"trashSourceFile": false,
 		"cleanupAfterExport": true,
 		"closeFile": true
 	},
