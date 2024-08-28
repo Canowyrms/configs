@@ -71,6 +71,9 @@
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\scoop\persist\nvm\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\scoop\persist\volta\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
 
+<!-- AI stuffs -->
+<excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\.ollama\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
+
 <!-- Dev stuffs -->
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith="*" contains_1="\node_modules\" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith="*" contains_1="\.pnpm-store\" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
