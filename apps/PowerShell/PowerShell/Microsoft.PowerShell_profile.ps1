@@ -24,7 +24,7 @@ if (Test-Path($ScoopCompletion)) { Import-Module "$ScoopCompletion" }
 # User scripts
 # ----------------------
 
-$MyScripts = "$env:USERPROFILE\Documents\PowerShell\Scripts"
+$MyScripts = "$env:UserProfile\Documents\PowerShell\Scripts"
 
 $caddy = "$MyScripts\caddy_completion.ps1"
 if (Test-Path($caddy)) { . $caddy }
@@ -40,6 +40,17 @@ if (Test-Path($ripgrep)) { . $ripgrep }
 
 $roadrunner = "$MyScripts\roadrunner_completion.ps1"
 if (Test-Path($roadrunner)) { . $roadrunner }
+
+
+# ----------------------
+# PsFzf integration
+# ----------------------
+
+$PsFzfPath = "$env:UserProfile\scoop\modules\PSFzf\PSFzf.psm1"
+if (Test-Path($PsFzfPath)) {
+	# replace 'Ctrl+t' and 'Ctrl+r' with your preferred bindings:
+	Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+}
 
 
 # ----------------------
