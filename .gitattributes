@@ -1,5 +1,8 @@
 # git-crypt
 
+# Browser extensions
+"/browser-ext/**/*" filter=git-crypt diff=git-crypt
+
 # FileZilla
 "/apps/FileZilla/config/*.xml" filter=git-crypt diff=git-crypt
 
