@@ -15,7 +15,32 @@
           <ShortCut>'Ctrl+B'</ShortCut>
           <Description>Go to Declaration or Usages</Description>
           <Count>1</Count>
-          <Hit>10</Hit>
+          <Hit>14</Hit>
+        </Item>
+      </Statistic>
+      <Statistic Action="New Directory...">
+        <Item>
+          <IdeaActionID>FileChooser.NewFolder</IdeaActionID>
+          <ShortCut>'Alt+Insert' or 'Ctrl+N'</ShortCut>
+          <Description>New Directory...</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Reformat Code">
+        <Item>
+          <IdeaActionID>ReformatCode</IdeaActionID>
+          <ShortCut>'Ctrl+Alt+L'</ShortCut>
+          <Description>Reformat Code</Description>
+          <Count>1</Count>
+          <Hit>1</Hit>
+        </Item>
+      </Statistic>
+      <Statistic Action="Reload All from Disk">
+        <Item>
+          <IdeaActionID>Synchronize</IdeaActionID>
+          <ShortCut>'Ctrl+Alt+Y'</ShortCut>
+          <Description>Reload All from Disk</Description>
+          <Count>1</Count>
         </Item>
       </Statistic>
       <Statistic Action="Split and Move Right">
@@ -24,7 +49,7 @@
           <ShortCut>'Alt+Shift+Right'</ShortCut>
           <Description>Split and Move Right</Description>
           <Count>1</Count>
-          <Hit>1</Hit>
+          <Hit>2</Hit>
         </Item>
       </Statistic>
     </option>
@@ -90,6 +115,14 @@
           <IdeaActionID>ActivateTerminalToolWindow</IdeaActionID>
           <ShortCut>'Ctrl+`'</ShortCut>
           <Description>Terminal</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Toggle Line Breakpoint">
+        <Item>
+          <IdeaActionID>ToggleLineBreakpoint</IdeaActionID>
+          <ShortCut>'Ctrl+F8'</ShortCut>
+          <Description>Toggle Line Breakpoint</Description>
           <Count>1</Count>
         </Item>
       </Statistic>
