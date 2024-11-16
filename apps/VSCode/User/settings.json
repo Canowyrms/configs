@@ -66,6 +66,18 @@
 	"gitlens.plusFeatures.enabled": false,
 	"gitlens.telemetry.enabled": false,
 	"gitlens.views.commitDetails.files.layout": "tree",
+	"gitlens.views.scm.grouped.views": {
+		"commits": true,
+		"branches": true,
+		"remotes": true,
+		"stashes": false,
+		"tags": true,
+		"worktrees": true,
+		"contributors": true,
+		"repositories": false,
+		"searchAndCompare": false,
+		"launchpad": false
+	},
 	
 	"markdown.preview.fontFamily": "'Noto Serif', system-ui, sans-serif",
 	"markdown.preview.fontSize": 16,
