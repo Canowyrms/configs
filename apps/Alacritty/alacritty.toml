@@ -1,11 +1,9 @@
 # Place in %APPDATA%\Alacritty\alacritty.toml
 # Documentation at https://alacritty.org/config-alacritty.html
 
-[shell]
-program = "C:\\Program Files\\Git\\bin\\bash.exe"
-args = ["-l -i"]
-
-#program = "pwsh"
+[terminal]
+shell = { program = "C:\\Program Files\\Git\\bin\\bash.exe", args = ["-l -i"] }
+#shell = { program = "pwsh" }
 
 [font]
 normal = { family = "FiraCode Nerd Font", style = "Regular" }
