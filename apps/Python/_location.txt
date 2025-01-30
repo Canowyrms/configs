@@ -1,0 +1,3 @@
+hardlink keep.txt <=> C:\Users\BK\scoop\persist\python\scripts\keep.txt
+hardlink keep.txt <=> C:\Users\BK\scoop\persist\python311\scripts\keep.txt
+hardlink keep.txt <=> C:\Users\BK\scoop\persist\python312\scripts\keep.txt

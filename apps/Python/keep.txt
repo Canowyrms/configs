@@ -1,0 +1,4 @@
+https://github.com/ScoopInstaller/Main/issues/5090#issuecomment-2118667729
+
+TLDR:
+put a txt file in scoop/persist/python/scripts to ensure pip upgrade succeeds.
