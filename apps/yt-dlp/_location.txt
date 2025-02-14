@@ -1,1 +1,3 @@
-hardlink yt-dlp.conf <=> C:\Users\BK\scoop\persist\yt-dlp\yt-dlp.conf
+hardlink yt-dlp.conf <=> C:\Users\BK\.yt-dlp\config
+junction configs <=> C:\Users\BK\.yt-dlp\configs
+junction scripts <=> C:\Users\BK\.yt-dlp\scripts
