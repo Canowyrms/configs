@@ -206,6 +206,22 @@
                 "icon": "C:\\Users\\BK\\Pictures\\Icons\\ubuntu.ico",
                 "name": "Ubuntu",
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "commandline": "C:\\Users\\BK\\scoop\\apps\\elvish\\current\\elvish.exe",
+                "elevate": false,
+                "guid": "{cecbd566-e074-4e5e-b93b-cce2a5bfdf36}",
+                "hidden": false,
+                "icon": "C:\\Users\\BK\\Pictures\\Icons\\elvish-192x192.png",
+                "name": "Elvish"
+            },
+            {
+                "commandline": "C:\\Users\\BK\\scoop\\apps\\elvish\\current\\elvish.exe",
+                "elevate": true,
+                "guid": "{42476880-1d7f-40b8-92f4-8252068f2a45}",
+                "hidden": false,
+                "icon": "C:\\Users\\BK\\Pictures\\Icons\\elvish-192x192.png",
+                "name": "Elvish (admin)"
             }
         ]
     },
