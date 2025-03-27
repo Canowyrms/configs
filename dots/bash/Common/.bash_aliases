@@ -66,5 +66,4 @@ alias glow='glow.exe'
 # yt-dlp
 # ----------------------
 
-alias yt-dlp='python ~/code/repos/python/yt-dlp/yt_dlp/__main__.py'
-alias yt='yt-dlp'
+alias yt-dlp='python g:/code/repos/python/yt-dlp/yt_dlp/__main__.py'
