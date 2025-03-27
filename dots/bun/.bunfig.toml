@@ -1,0 +1,10 @@
+[install]
+# where `bun install --global` installs packages
+globalDir = "G:/.bun/install/global"
+
+# where globally-installed package bins are linked
+globalBinDir = "G:/.bun/bin"
+
+[install.cache]
+# the directory to use for the cache
+dir = "G:/.bun/install/cache"
