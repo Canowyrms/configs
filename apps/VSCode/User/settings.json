@@ -18,6 +18,7 @@
 
 	"diffEditor.ignoreTrimWhitespace": false,
 	"diffEditor.maxComputationTime": 0,
+	"diffEditor.renderSideBySide": true,
 
 	"editor.acceptSuggestionOnEnter": "off",
 	"editor.codeLens": false,
@@ -75,9 +76,10 @@
 	"outline.collapseItems": "alwaysCollapse",
 
 	"php.executablePath": "C:\\Users\\BK\\scoop\\apps\\php\\current\\php.exe",
+	"php.format.codeStyle": "WordPress",
 	"php.validate.enable": true,
 	"php.validate.run": "onType",
-	"php.version": "8.0",
+	"php.version": "8.4",
 
 	"powershell.integratedConsole.showOnStartup": false,
 	"powershell.promptToUpdatePowerShell": false,
@@ -108,9 +110,10 @@
 	"terminal.integrated.persistentSessionReviveProcess": "never",
 	"terminal.integrated.tabs.location": "left",
 	
+	"workbench.colorTheme": "One Dark Pro Night Flat",
 	"workbench.editor.focusRecentEditorAfterClose": false,
 	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.iconTheme": "vscode-icons",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.view.alwaysShowHeaderActions": true,
-	"workbench.iconTheme": "vscode-icons",
 }
