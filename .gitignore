@@ -24,6 +24,9 @@
 /apps/OBS Studio/obs-studio/basic/**/*.bak
 /apps/OBS Studio/obs-studio/basic/**/service.json
 
+# PresentMon
+/apps/PresentMon/PresentMon/Captures
+
 # SVP
 /apps/SVP/settings/*.lic
 

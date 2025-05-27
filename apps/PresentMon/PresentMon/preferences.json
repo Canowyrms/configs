@@ -1,0 +1,87 @@
+{
+   "signature": {
+      "code": "p2c-cap-pref",
+      "version": "0.18.0"
+   },
+   "preferences": {
+      "selectedPreset": 1000,
+      "capturePath": "",
+      "captureDelay": 1,
+      "enableCaptureDelay": false,
+      "captureDuration": 10,
+      "enableCaptureDuration": false,
+      "hideDuringCapture": true,
+      "hideAlways": false,
+      "independentWindow": false,
+      "metricPollRate": 30,
+      "overlayDrawRate": 30,
+      "telemetrySamplingPeriodMs": 100,
+      "etwFlushPeriod": 8,
+      "manualEtwFlush": true,
+      "metricsOffset": 32,
+      "metricsWindow": 1000,
+      "overlayPosition": 0,
+      "timeRange": 10,
+      "overlayMargin": 0,
+      "overlayBorder": 0,
+      "overlayPadding": 10,
+      "graphMargin": 2,
+      "graphBorder": 0,
+      "graphPadding": 5,
+      "overlayBorderColor": {
+         "r": 255,
+         "g": 255,
+         "b": 255,
+         "a": 0
+      },
+      "overlayBackgroundColor": {
+         "r": 50,
+         "g": 57,
+         "b": 91,
+         "a": 0.8627450980392157
+      },
+      "graphFont": {
+         "name": "Verdana",
+         "axisSize": 10
+      },
+      "overlayWidth": 400,
+      "upscale": false,
+      "generateStats": true,
+      "enableTargetBlocklist": true,
+      "enableAutotargetting": true,
+      "upscaleFactor": 2,
+      "adapterId": null
+   },
+   "hotkeyBindings": {
+      "ToggleCapture": {
+         "action": 0,
+         "combination": {
+            "key": 42,
+            "modifiers": [
+               2,
+               4
+            ]
+         }
+      },
+      "ToggleOverlay": {
+         "action": 1,
+         "combination": {
+            "key": 46,
+            "modifiers": [
+               2,
+               4
+            ]
+         }
+      },
+      "CyclePreset": {
+         "action": 2,
+         "combination": {
+            "key": 47,
+            "modifiers": [
+               2,
+               4
+            ]
+         }
+      }
+   }
+}
