@@ -4,39 +4,32 @@
     "actions": 
     [
         {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
         },
         {
             "command": 
             {
                 "action": "newTab"
             },
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+t"
+            "id": "User.newTab.5DEADB41"
         },
         {
             "command": "openNewTabDropdown",
-            "id": "User.openNewTabDropdown",
-            "keys": "ctrl+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+t"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+w"
+            "id": "User.openNewTabDropdown"
         },
         {
             "command": 
@@ -44,32 +37,63 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": 
             {
                 "action": "closeTab"
             },
-            "id": "User.closeTab.0",
-            "keys": "ctrl+w"
+            "id": "User.closeTab.0"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
     "disableAnimations": true,
+    "keybindings": 
+    [
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "id": "User.newTab.5DEADB41",
+            "keys": "ctrl+t"
+        },
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.openNewTabDropdown",
+            "keys": "ctrl+space"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "User.closeTab.0",
+            "keys": "ctrl+w"
+        }
+    ],
     "newTabMenu": 
     [
         {
@@ -85,7 +109,7 @@
             "colorScheme": "Arthur",
             "font": 
             {
-                "face": "FiraCode Nerd Font",
+                "face": "0xProto Nerd Font",
                 "size": 11
             },
             "scrollbarState": "always",
@@ -206,6 +230,18 @@
                 "icon": "C:\\Users\\BK\\Pictures\\Icons\\ubuntu.ico",
                 "name": "Ubuntu",
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
+                "hidden": true,
+                "name": "Ubuntu-24.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{d8e96812-b789-5068-a5ae-10b2fb53e95f}",
+                "hidden": false,
+                "name": "Ubuntu 24.04.1 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu24.04LTS_79rhkp1fndgsc"
             },
             {
                 "commandline": "C:\\Users\\BK\\scoop\\apps\\elvish\\current\\elvish.exe",
