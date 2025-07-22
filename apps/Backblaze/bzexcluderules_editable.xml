@@ -65,6 +65,7 @@
 
 <!-- Scoop apps -->
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\scoop\" contains_1="*" contains_2="*" doesNotContain="\persist\" endsWith="*" hasFileExtension="*" />
+<excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\scoop\apps\slic3r\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\scoop\persist\composer\home\vendor\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\scoop\persist\laragon\www\" contains_1="\node_modules\" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Users\BK\scoop\persist\laragon\www\" contains_1="\vendor\" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
