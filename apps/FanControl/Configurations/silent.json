@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "209",
+  "__VERSION__": "227",
   "Main": {
     "Controls": [
       {
@@ -19,8 +19,8 @@
           "Name": "Fan #1",
           "NickName": "Intake"
         },
-        "SelectedCommandStepDown": 5.0,
-        "SelectedCommandStepUp": 10.0,
+        "SelectedCommandStepDown": 5,
+        "SelectedCommandStepUp": 10,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "SelectedStart": 15,
@@ -43,17 +43,22 @@
           "Name": "Fan #2",
           "NickName": "CPU"
         },
-        "SelectedCommandStepDown": 5.0,
-        "SelectedCommandStepUp": 10.0,
+        "SelectedCommandStepDown": 5,
+        "SelectedCommandStepUp": 10,
         "SelectedFanCurve": {
           "CommandMode": 0,
-          "IgnoreHysteresisAtLimits": true,
+          "HysteresisConfig": {
+            "HysteresisValueDown": 5,
+            "HysteresisValueUp": 5,
+            "IgnoreHysteresisAtLimits": true,
+            "ResponseTimeDown": 3,
+            "ResponseTimeUp": 3
+          },
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
           "Name": "CPU Stepped 2",
-          "OneWayHysteresis": false,
           "Points": [
             "45,30",
             "45.1,45",
@@ -64,8 +69,6 @@
             "75,75",
             "75.1,100"
           ],
-          "SelectedHysteresis": 5.0,
-          "SelectedResponseTime": 3,
           "SelectedTempSource": {
             "Identifier": "Time/CPU Average",
             "IsHidden": false,
@@ -100,17 +103,22 @@
           "Name": "Fan #3",
           "NickName": "GPU"
         },
-        "SelectedCommandStepDown": 5.0,
-        "SelectedCommandStepUp": 20.0,
+        "SelectedCommandStepDown": 5,
+        "SelectedCommandStepUp": 20,
         "SelectedFanCurve": {
           "CommandMode": 0,
-          "IgnoreHysteresisAtLimits": true,
+          "HysteresisConfig": {
+            "HysteresisValueDown": 5,
+            "HysteresisValueUp": 5,
+            "IgnoreHysteresisAtLimits": true,
+            "ResponseTimeDown": 3,
+            "ResponseTimeUp": 3
+          },
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
           "Name": "GPU Stepped",
-          "OneWayHysteresis": false,
           "Points": [
             "45,35",
             "45.1,50",
@@ -121,8 +129,6 @@
             "75,80",
             "75.1,100"
           ],
-          "SelectedHysteresis": 5.0,
-          "SelectedResponseTime": 3,
           "SelectedTempSource": {
             "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
             "IsHidden": false,
@@ -146,8 +152,8 @@
         "Name": "Fan #4",
         "NickName": "Fan Control #4",
         "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "SelectedStart": 0,
@@ -165,8 +171,8 @@
         "Name": "Fan #5",
         "NickName": "Fan Control #5",
         "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "SelectedStart": 0,
@@ -189,17 +195,22 @@
           "Name": "Fan #6",
           "NickName": "Rear Exhaust"
         },
-        "SelectedCommandStepDown": 5.0,
-        "SelectedCommandStepUp": 12.0,
+        "SelectedCommandStepDown": 5,
+        "SelectedCommandStepUp": 12,
         "SelectedFanCurve": {
           "CommandMode": 0,
-          "IgnoreHysteresisAtLimits": true,
+          "HysteresisConfig": {
+            "HysteresisValueDown": 5,
+            "HysteresisValueUp": 5,
+            "IgnoreHysteresisAtLimits": true,
+            "ResponseTimeDown": 3,
+            "ResponseTimeUp": 3
+          },
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120.0,
-          "MinimumTemperature": 20.0,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
           "Name": "Exhaust Stepped",
-          "OneWayHysteresis": false,
           "Points": [
             "40,35",
             "40.1,45",
@@ -212,8 +223,6 @@
             "75,85",
             "75.1,100"
           ],
-          "SelectedHysteresis": 5.0,
-          "SelectedResponseTime": 3,
           "SelectedTempSource": {
             "Identifier": "Mix/Mix Sensor",
             "IsHidden": false,
@@ -257,8 +266,8 @@
         "Name": "Control 1 - NVIDIA GeForce RTX 2070 SUPER",
         "NickName": "Control 1 - NVIDIA GeForce RTX 2070 SUPER",
         "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "SelectedStart": 0,
@@ -276,8 +285,8 @@
         "Name": "Control 2 - NVIDIA GeForce RTX 2070 SUPER",
         "NickName": "Control 2 - NVIDIA GeForce RTX 2070 SUPER",
         "PairedFanSensor": null,
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "SelectedStart": 0,
@@ -328,13 +337,18 @@
     "FanCurves": [
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 2,
+          "HysteresisValueUp": 2,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 1,
+          "ResponseTimeUp": 1
+        },
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "Intake Graph",
-        "OneWayHysteresis": false,
         "Points": [
           "50,0",
           "50.1,30",
@@ -342,8 +356,6 @@
           "65.1,60",
           "75,100"
         ],
-        "SelectedHysteresis": 2.0,
-        "SelectedResponseTime": 1,
         "SelectedTempSource": {
           "Identifier": "Mix/Mix Sensor",
           "IsHidden": false,
@@ -373,19 +385,22 @@
       },
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 5,
+          "HysteresisValueUp": 5,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 3,
+          "ResponseTimeUp": 3
+        },
         "IsHidden": true,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "CPU Graph",
-        "OneWayHysteresis": false,
         "Points": [
           "50,30",
           "75,100"
         ],
-        "SelectedHysteresis": 5.0,
-        "SelectedResponseTime": 3,
         "SelectedTempSource": {
           "Identifier": "Time/CPU Average",
           "IsHidden": false,
@@ -401,20 +416,23 @@
       },
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 2,
+          "HysteresisValueUp": 2,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 1,
+          "ResponseTimeUp": 1
+        },
         "IsHidden": true,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "GPU Graph",
-        "OneWayHysteresis": false,
         "Points": [
           "20,35",
           "50,35",
           "75,100"
         ],
-        "SelectedHysteresis": 2.0,
-        "SelectedResponseTime": 1,
         "SelectedTempSource": {
           "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
           "IsHidden": false,
@@ -424,19 +442,22 @@
       },
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 2,
+          "HysteresisValueUp": 2,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 1,
+          "ResponseTimeUp": 1
+        },
         "IsHidden": true,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "Exhaust Graph",
-        "OneWayHysteresis": false,
         "Points": [
           "40,30",
           "75,100"
         ],
-        "SelectedHysteresis": 2.0,
-        "SelectedResponseTime": 1,
         "SelectedTempSource": {
           "Identifier": "Mix/Mix Sensor",
           "IsHidden": false,
@@ -466,13 +487,18 @@
       },
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 5,
+          "HysteresisValueUp": 5,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 3,
+          "ResponseTimeUp": 3
+        },
         "IsHidden": true,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "CPU Stepped",
-        "OneWayHysteresis": false,
         "Points": [
           "30,30",
           "30.1,40",
@@ -485,8 +511,6 @@
           "70,70",
           "70.1,100"
         ],
-        "SelectedHysteresis": 5.0,
-        "SelectedResponseTime": 3,
         "SelectedTempSource": {
           "Identifier": "Time/CPU Average",
           "IsHidden": false,
@@ -502,13 +526,18 @@
       },
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 5,
+          "HysteresisValueUp": 5,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 3,
+          "ResponseTimeUp": 3
+        },
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "CPU Stepped 2",
-        "OneWayHysteresis": false,
         "Points": [
           "45,30",
           "45.1,45",
@@ -519,8 +548,6 @@
           "75,75",
           "75.1,100"
         ],
-        "SelectedHysteresis": 5.0,
-        "SelectedResponseTime": 3,
         "SelectedTempSource": {
           "Identifier": "Time/CPU Average",
           "IsHidden": false,
@@ -536,13 +563,18 @@
       },
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 5,
+          "HysteresisValueUp": 5,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 3,
+          "ResponseTimeUp": 3
+        },
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "GPU Stepped",
-        "OneWayHysteresis": false,
         "Points": [
           "45,35",
           "45.1,50",
@@ -553,8 +585,6 @@
           "75,80",
           "75.1,100"
         ],
-        "SelectedHysteresis": 5.0,
-        "SelectedResponseTime": 3,
         "SelectedTempSource": {
           "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
           "IsHidden": false,
@@ -564,13 +594,18 @@
       },
       {
         "CommandMode": 0,
-        "IgnoreHysteresisAtLimits": true,
+        "HysteresisConfig": {
+          "HysteresisValueDown": 5,
+          "HysteresisValueUp": 5,
+          "IgnoreHysteresisAtLimits": true,
+          "ResponseTimeDown": 3,
+          "ResponseTimeUp": 3
+        },
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120.0,
-        "MinimumTemperature": 20.0,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "Exhaust Stepped",
-        "OneWayHysteresis": false,
         "Points": [
           "40,35",
           "40.1,45",
@@ -583,8 +618,6 @@
           "75,85",
           "75.1,100"
         ],
-        "SelectedHysteresis": 5.0,
-        "SelectedResponseTime": 3,
         "SelectedTempSource": {
           "Identifier": "Mix/Mix Sensor",
           "IsHidden": false,
