@@ -8,6 +8,9 @@
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[xml]": {
 		"editor.defaultFormatter": "redhat.vscode-xml"
 	},
@@ -110,7 +113,7 @@
 	"terminal.integrated.persistentSessionReviveProcess": "never",
 	"terminal.integrated.tabs.location": "left",
 	
-	"workbench.colorTheme": "One Dark Pro Night Flat",
+	"workbench.colorTheme": "Noctis Bordo",
 	"workbench.editor.focusRecentEditorAfterClose": false,
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.iconTheme": "vscode-icons",
