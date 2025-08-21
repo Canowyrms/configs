@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "227",
+  "__VERSION__": "230",
   "Main": {
     "Controls": [
       {
@@ -224,6 +224,7 @@
             "75.1,100"
           ],
           "SelectedTempSource": {
+            "AllowMissingSensor": false,
             "Identifier": "Mix/Mix Sensor",
             "IsHidden": false,
             "Name": "Mix Sensor",
@@ -295,6 +296,7 @@
     ],
     "CustomSensors": [
       {
+        "AllowMissingSensor": false,
         "Identifier": "Mix/Mix Sensor",
         "IsHidden": false,
         "Name": "Mix Sensor",
@@ -357,6 +359,7 @@
           "75,100"
         ],
         "SelectedTempSource": {
+          "AllowMissingSensor": false,
           "Identifier": "Mix/Mix Sensor",
           "IsHidden": false,
           "Name": "Mix Sensor",
@@ -459,6 +462,7 @@
           "75,100"
         ],
         "SelectedTempSource": {
+          "AllowMissingSensor": false,
           "Identifier": "Mix/Mix Sensor",
           "IsHidden": false,
           "Name": "Mix Sensor",
@@ -619,6 +623,7 @@
           "75.1,100"
         ],
         "SelectedTempSource": {
+          "AllowMissingSensor": false,
           "Identifier": "Mix/Mix Sensor",
           "IsHidden": false,
           "Name": "Mix Sensor",
