@@ -11,3 +11,6 @@
 
 # OBS Studio
 "/apps/OBS Studio/obs-studio/basic/profiles/**/*/basic.ini" filter=git-crypt diff=git-crypt
+
+# qBittorrent
+"/apps/qBittorrent/**/*" filter=git-crypt diff=git-crypt

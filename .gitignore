@@ -27,6 +27,10 @@
 # PresentMon
 /apps/PresentMon/PresentMon/Captures
 
+# qBittorrent
+/apps/qBittorrent/qBittorrent/lockfile
+/apps/qBittorrent/qBittorrent/rss/storage.lock
+
 # SVP
 /apps/SVP/settings/*.lic
 
