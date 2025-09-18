@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "193",
+  "__VERSION__": "231",
   "Main": {
     "Controls": [
       {
@@ -71,7 +71,7 @@
             "IsHidden": false,
             "Name": "CPU Average",
             "SelectedTempSource": {
-              "Identifier": "/intelcpu/0/temperature/6",
+              "Identifier": "/intelcpu/0/temperature/8",
               "IsHidden": false,
               "Name": "CPU Package",
               "NickName": "CPU Package"
@@ -225,7 +225,7 @@
                 "IsHidden": false,
                 "Name": "CPU Average",
                 "SelectedTempSource": {
-                  "Identifier": "/intelcpu/0/temperature/6",
+                  "Identifier": "/intelcpu/0/temperature/8",
                   "IsHidden": false,
                   "Name": "CPU Package",
                   "NickName": "CPU Package"
@@ -296,7 +296,7 @@
             "IsHidden": false,
             "Name": "CPU Average",
             "SelectedTempSource": {
-              "Identifier": "/intelcpu/0/temperature/6",
+              "Identifier": "/intelcpu/0/temperature/8",
               "IsHidden": false,
               "Name": "CPU Package",
               "NickName": "CPU Package"
@@ -316,7 +316,7 @@
         "IsHidden": false,
         "Name": "CPU Average",
         "SelectedTempSource": {
-          "Identifier": "/intelcpu/0/temperature/6",
+          "Identifier": "/intelcpu/0/temperature/8",
           "IsHidden": false,
           "Name": "CPU Package",
           "NickName": "CPU Package"
@@ -355,7 +355,7 @@
               "IsHidden": false,
               "Name": "CPU Average",
               "SelectedTempSource": {
-                "Identifier": "/intelcpu/0/temperature/6",
+                "Identifier": "/intelcpu/0/temperature/8",
                 "IsHidden": false,
                 "Name": "CPU Package",
                 "NickName": "CPU Package"
@@ -391,7 +391,7 @@
           "IsHidden": false,
           "Name": "CPU Average",
           "SelectedTempSource": {
-            "Identifier": "/intelcpu/0/temperature/6",
+            "Identifier": "/intelcpu/0/temperature/8",
             "IsHidden": false,
             "Name": "CPU Package",
             "NickName": "CPU Package"
@@ -448,7 +448,7 @@
               "IsHidden": false,
               "Name": "CPU Average",
               "SelectedTempSource": {
-                "Identifier": "/intelcpu/0/temperature/6",
+                "Identifier": "/intelcpu/0/temperature/8",
                 "IsHidden": false,
                 "Name": "CPU Package",
                 "NickName": "CPU Package"
@@ -492,7 +492,7 @@
           "IsHidden": false,
           "Name": "CPU Average",
           "SelectedTempSource": {
-            "Identifier": "/intelcpu/0/temperature/6",
+            "Identifier": "/intelcpu/0/temperature/8",
             "IsHidden": false,
             "Name": "CPU Package",
             "NickName": "CPU Package"
@@ -526,7 +526,7 @@
           "IsHidden": false,
           "Name": "CPU Average",
           "SelectedTempSource": {
-            "Identifier": "/intelcpu/0/temperature/6",
+            "Identifier": "/intelcpu/0/temperature/8",
             "IsHidden": false,
             "Name": "CPU Package",
             "NickName": "CPU Package"
@@ -596,7 +596,7 @@
               "IsHidden": false,
               "Name": "CPU Average",
               "SelectedTempSource": {
-                "Identifier": "/intelcpu/0/temperature/6",
+                "Identifier": "/intelcpu/0/temperature/8",
                 "IsHidden": false,
                 "Name": "CPU Package",
                 "NickName": "CPU Package"
