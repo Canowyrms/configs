@@ -1,14 +1,14 @@
 {
     "DesktopAudioDevice1": {
         "prev_ver": 520093697,
-        "name": "Desktop Audio",
+        "name": "Desktop",
         "uuid": "1fb436f3-2b74-45f6-a75e-36c79897e5ea",
         "id": "wasapi_output_capture",
         "versioned_id": "wasapi_output_capture",
         "settings": {
             "device_id": "default"
         },
-        "mixers": 192,
+        "mixers": 224,
         "sync": 0,
         "flags": 0,
         "volume": 1.0,
@@ -29,8 +29,36 @@
         "deinterlace_field_order": 0,
         "monitoring_type": 0,
         "private_settings": {
-            "mixer_hidden": true
-        }
+            "mixer_hidden": false
+        },
+        "filters": [
+            {
+                "prev_ver": 520093697,
+                "name": "Limiter",
+                "uuid": "4c7d00a2-f6e3-427a-8a49-3ac5a55eb6ad",
+                "id": "limiter_filter",
+                "versioned_id": "limiter_filter",
+                "settings": {
+                    "threshold": -6.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            }
+        ]
     },
     "AuxAudioDevice1": {
         "prev_ver": 520093697,
@@ -39,9 +67,9 @@
         "id": "wasapi_input_capture",
         "versioned_id": "wasapi_input_capture",
         "settings": {
-            "device_id": "default"
+            "device_id": "{0.0.1.00000000}.{f0464c2c-7744-4063-8c8a-2d1cc3bc4f1d}"
         },
-        "mixers": 229,
+        "mixers": 197,
         "sync": 0,
         "flags": 0,
         "volume": 0.56234133243560791,
@@ -276,9 +304,6 @@
         },
         {
             "name": "🎬 ❗ Desktop Fallback ❗"
-        },
-        {
-            "name": "🎬 ❗ PHONE ❗"
         },
         {
             "name": "🎬 Fragpunk"
@@ -644,7 +669,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.39810717105865479,
@@ -968,7 +993,7 @@
                 "priority": 2,
                 "window": "Overwatch:TankWindowClass:Overwatch.exe"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -1007,7 +1032,7 @@
                 "anti_cheat_hook": true,
                 "hook_rate": 1
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -1039,7 +1064,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 7,
                 "items": [
                     {
                         "name": "🖥 Primary",
@@ -1060,61 +1085,6 @@
                         "crop_right": 0,
                         "crop_bottom": 0,
                         "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 Browser",
-                        "source_uuid": "c4811149-578c-4e9b-8f84-906ed41785fe",
-                        "visible": false,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 3,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -1223,8 +1193,6 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
                 "libobs.hide_scene_item.5": []
             },
@@ -1340,7 +1308,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.39810717105865479,
@@ -1722,7 +1690,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -1902,7 +1870,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -1920,46 +1888,6 @@
                 "libobs.push-to-talk": [],
                 "hotkey_start": [],
                 "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "📱 DroidCam",
-            "uuid": "49c24e6f-d36e-4e68-b75a-d2b010162e2c",
-            "id": "droidcam_obs",
-            "versioned_id": "droidcam_obs",
-            "settings": {
-                "resolution": 2,
-                "wifi_ip": "10.0.0.81",
-                "cur_dev_ip": "10.0.0.81",
-                "cur_dev_type": 1,
-                "device_list": "dev_id_wifi",
-                "cur_dev_id": "dev_id_wifi",
-                "remote_url": "",
-                "activated": true,
-                "enable_aduio": true,
-                "deactivate_wns": true
-            },
-            "mixers": 208,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2122,7 +2050,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -2155,218 +2083,10 @@
             "settings": {
                 "window": "BattleBit:UnityWndClass:BattleBit.exe"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🎬 ❗ PHONE ❗",
-            "uuid": "c47b0075-5b4c-4433-9c32-f54cb011dcdb",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 2,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "scrcpy",
-                        "source_uuid": "c56c1d6d-1dfa-4ba2-a4f8-5737401f3b3c",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 2,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 657.0,
-                            "y": 1314.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.91250002384185791,
-                            "y": 1.8250000476837158
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 Phone",
-                        "source_uuid": "f57a262d-22a2-43d2-bf8a-d47a9994ef52",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🔊 Phone",
-            "uuid": "f57a262d-22a2-43d2-bf8a-d47a9994ef52",
-            "id": "wasapi_input_capture",
-            "versioned_id": "wasapi_input_capture",
-            "settings": {
-                "device_id": "{0.0.1.00000000}.{dd1cac33-5bf0-4e5b-9f23-d8cee6c3fbf5}"
-            },
-            "mixers": 197,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.70794576406478882,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 2,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "scrcpy",
-            "uuid": "c56c1d6d-1dfa-4ba2-a4f8-5737401f3b3c",
-            "id": "window_capture",
-            "versioned_id": "window_capture",
-            "settings": {
-                "window": "Pixel 3:SDL_app:scrcpy.exe",
-                "priority": 1
-            },
-            "mixers": 35,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -2686,7 +2406,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -2719,7 +2439,7 @@
             "settings": {
                 "window": "Apex Legends:Respawn001:r5apex_dx12.exe"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -3707,7 +3427,9 @@
                         "hide_transition": {
                             "duration": 0
                         },
-                        "private_settings": {}
+                        "private_settings": {
+                            "collapsed": false
+                        }
                     },
                     {
                         "name": "🔊 Discord",
@@ -3800,7 +3522,7 @@
             "settings": {
                 "window": "PortalWars  :UnrealWindow:PortalWars-Win64-Shipping.exe"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.39810717105865479,
@@ -3832,7 +3554,7 @@
                 "priority": 2,
                 "window": "Reddit - Incomprehensirule #3A 196:Chrome_WidgetWin_1:brave.exe"
             },
-            "mixers": 233,
+            "mixers": 192,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4010,7 +3732,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4046,7 +3768,7 @@
                 "capture_mode": "window",
                 "rgb10a2_space": "2100pq"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4081,7 +3803,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4116,7 +3838,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 35,
+            "mixers": 3,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4452,7 +4174,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4630,7 +4352,7 @@
             "settings": {
                 "window": "The Witcher 3:W2ViewportClass:witcher3.exe"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4664,7 +4386,7 @@
                 "capture_mode": "window",
                 "capture_overlays": false
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -4844,7 +4566,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -5024,7 +4746,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -5204,7 +4926,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -5384,7 +5106,7 @@
                 "capture_audio": false,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -5564,7 +5286,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -5744,7 +5466,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -5924,7 +5646,7 @@
                 "capture_audio": true,
                 "capture_mode": "window"
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -5957,7 +5679,7 @@
             "settings": {
                 "window": "Even I’M Jealous of These Guys - Reacting to r/HomeLab - YouTube and 18 more pages - Personal - Microsoft​ Edge:Chrome_WidgetWin_1:msedge.exe"
             },
-            "mixers": 233,
+            "mixers": 192,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -5986,11 +5708,11 @@
             "id": "wasapi_process_output_capture",
             "versioned_id": "wasapi_process_output_capture",
             "settings": {
-                "priority": 2,
+                "priority": 0,
                 "undo_suuid": "5a299399-ce01-4bd2-959e-c0e0b54b806b",
-                "window": "#22the-common-room | Home of the Ring thots/Frawg Skwad - Discord:Chrome_WidgetWin_1:Discord.exe"
+                "window": "#22the-common-room | Home of the Fam Squad - Discord:Chrome_WidgetWin_1:Discord.exe"
             },
-            "mixers": 241,
+            "mixers": 209,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -6021,118 +5743,7 @@
             "settings": {
                 "custom_size": false,
                 "id_counter": 19,
-                "items": [
-                    {
-                        "name": "📱 DroidCam",
-                        "source_uuid": "49c24e6f-d36e-4e68-b75a-d2b010162e2c",
-                        "visible": false,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 14,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "scrcpy mic",
-                        "source_uuid": "d8dbf0ca-3279-47a8-84ee-0dbec27d977e",
-                        "visible": false,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 18,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
+                "items": []
             },
             "mixers": 0,
             "sync": 0,
@@ -6146,11 +5757,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.14": [],
-                "libobs.hide_scene_item.14": [],
-                "libobs.show_scene_item.18": [],
-                "libobs.hide_scene_item.18": []
+                "OBSBasic.SelectScene": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -6166,7 +5773,7 @@
             "settings": {
                 "window": "Naxatras - Utopian Structures - MusicBee:WindowsForms10.Window.8.app.0.2bf8098_r8_ad1:MusicBee.exe"
             },
-            "mixers": 255,
+            "mixers": 201,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -6197,7 +5804,7 @@
             "settings": {
                 "capture_audio": true
             },
-            "mixers": 227,
+            "mixers": 195,
             "sync": 0,
             "flags": 0,
             "volume": 0.31622776389122009,
@@ -6479,122 +6086,6 @@
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
             "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "scrcpy mic",
-            "uuid": "d8dbf0ca-3279-47a8-84ee-0dbec27d977e",
-            "id": "wasapi_process_output_capture",
-            "versioned_id": "wasapi_process_output_capture",
-            "settings": {
-                "window": "Pixel 3:SDL_app:scrcpy.exe"
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 520093697,
-                    "name": "Noise Gate",
-                    "uuid": "71736629-cc9a-4dbb-b3a0-5ddb73b8b1f6",
-                    "id": "noise_gate_filter",
-                    "versioned_id": "noise_gate_filter",
-                    "settings": {
-                        "open_threshold": -36.0,
-                        "close_threshold": -42.0
-                    },
-                    "mixers": 255,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 520093697,
-                    "name": "Limiter",
-                    "uuid": "264b79e6-ac4c-41ed-85e6-df71dc78a3f0",
-                    "id": "limiter_filter",
-                    "versioned_id": "limiter_filter",
-                    "settings": {
-                        "threshold": -6.0
-                    },
-                    "mixers": 255,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 520093697,
-                    "name": "Compressor (AI Answer)",
-                    "uuid": "02197c10-4a22-410d-9d1a-7d80c066998a",
-                    "id": "compressor_filter",
-                    "versioned_id": "compressor_filter",
-                    "settings": {
-                        "ratio": 3.0,
-                        "threshold": -24.0,
-                        "attack_time": 3,
-                        "release_time": 15,
-                        "output_gain": 4.0
-                    },
-                    "mixers": 255,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
         }
     ],
     "groups": [
