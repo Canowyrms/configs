@@ -1,0 +1,699 @@
+{
+  "__VERSION__": "187",
+  "Main": {
+    "Controls": [
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6793d/control/0",
+        "IsHidden": false,
+        "ManualControl": true,
+        "ManualControlValue": 0,
+        "MinimumPercent": 0,
+        "Name": "Fan #1",
+        "NickName": "Intake",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6793d/fan/0",
+          "IsHidden": false,
+          "Name": "Fan #1",
+          "NickName": "Intake"
+        },
+        "SelectedCommandStepDown": 5.0,
+        "SelectedCommandStepUp": 10.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 15,
+        "SelectedStop": 15
+      },
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6793d/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 45,
+        "MinimumPercent": 0,
+        "Name": "Fan #2",
+        "NickName": "CPU",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6793d/fan/1",
+          "IsHidden": false,
+          "Name": "Fan #2",
+          "NickName": "CPU"
+        },
+        "SelectedCommandStepDown": 5.0,
+        "SelectedCommandStepUp": 10.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "CPU Stepped 2",
+          "OneWayHysteresis": false,
+          "Points": [
+            "45,30",
+            "45.1,45",
+            "55,45",
+            "55.1,60",
+            "65,60",
+            "65.1,75",
+            "75,75",
+            "75.1,100"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 3,
+          "SelectedTempSource": {
+            "Identifier": "Time/CPU Average",
+            "IsHidden": false,
+            "Name": "CPU Average",
+            "SelectedTempSource": {
+              "Identifier": "/intelcpu/0/temperature/6",
+              "IsHidden": false,
+              "Name": "CPU Package",
+              "NickName": "CPU Package"
+            },
+            "SelectedTime": 3
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 15,
+        "SelectedStop": 12
+      },
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6793d/control/2",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 30,
+        "MinimumPercent": 0,
+        "Name": "Fan #3",
+        "NickName": "GPU",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6793d/fan/2",
+          "IsHidden": false,
+          "Name": "Fan #3",
+          "NickName": "GPU"
+        },
+        "SelectedCommandStepDown": 5.0,
+        "SelectedCommandStepUp": 20.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "GPU Stepped",
+          "OneWayHysteresis": false,
+          "Points": [
+            "45,35",
+            "45.1,50",
+            "55,50",
+            "55.1,65",
+            "65,65",
+            "65.1,80",
+            "75,80",
+            "75.1,100"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 3,
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 30,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6793d/control/3",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #4",
+        "NickName": "Fan Control #4",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6793d/control/4",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #5",
+        "NickName": "Fan Control #5",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6793d/control/5",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 35,
+        "MinimumPercent": 0,
+        "Name": "Fan #6",
+        "NickName": "Rear Exhaust",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6793d/fan/5",
+          "IsHidden": false,
+          "Name": "Fan #6",
+          "NickName": "Rear Exhaust"
+        },
+        "SelectedCommandStepDown": 5.0,
+        "SelectedCommandStepUp": 12.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "Exhaust Stepped",
+          "OneWayHysteresis": false,
+          "Points": [
+            "40,35",
+            "40.1,45",
+            "50,45",
+            "50.1,55",
+            "60,55",
+            "60.1,70",
+            "70,70",
+            "70.1,85",
+            "75,85",
+            "75.1,100"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 3,
+          "SelectedTempSource": {
+            "Identifier": "Mix/Mix Sensor",
+            "IsHidden": false,
+            "Name": "Mix Sensor",
+            "SelectedMixFunction": 1,
+            "SelectedSensors": [
+              {
+                "Identifier": "Time/CPU Average",
+                "IsHidden": false,
+                "Name": "CPU Average",
+                "SelectedTempSource": {
+                  "Identifier": "/intelcpu/0/temperature/6",
+                  "IsHidden": false,
+                  "Name": "CPU Package",
+                  "NickName": "CPU Package"
+                },
+                "SelectedTime": 3
+              },
+              {
+                "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 15,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-TU104-A/control/0",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 1 - NVIDIA GeForce RTX 2070 SUPER",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 2070 SUPER",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-TU104-A/control/1",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 2 - NVIDIA GeForce RTX 2070 SUPER",
+        "NickName": "Control 2 - NVIDIA GeForce RTX 2070 SUPER",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      }
+    ],
+    "CustomSensors": [
+      {
+        "Identifier": "Mix/Mix Sensor",
+        "IsHidden": false,
+        "Name": "Mix Sensor",
+        "SelectedMixFunction": 1,
+        "SelectedSensors": [
+          {
+            "Identifier": "Time/CPU Average",
+            "IsHidden": false,
+            "Name": "CPU Average",
+            "SelectedTempSource": {
+              "Identifier": "/intelcpu/0/temperature/6",
+              "IsHidden": false,
+              "Name": "CPU Package",
+              "NickName": "CPU Package"
+            },
+            "SelectedTime": 3
+          },
+          {
+            "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        ]
+      },
+      {
+        "Identifier": "Time/CPU Average",
+        "IsHidden": false,
+        "Name": "CPU Average",
+        "SelectedTempSource": {
+          "Identifier": "/intelcpu/0/temperature/6",
+          "IsHidden": false,
+          "Name": "CPU Package",
+          "NickName": "CPU Package"
+        },
+        "SelectedTime": 3
+      }
+    ],
+    "FanCurves": [
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "Intake Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "50,0",
+          "50.1,30",
+          "65,30.0284444444444",
+          "65.1,60",
+          "75,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "Mix/Mix Sensor",
+          "IsHidden": false,
+          "Name": "Mix Sensor",
+          "SelectedMixFunction": 1,
+          "SelectedSensors": [
+            {
+              "Identifier": "Time/CPU Average",
+              "IsHidden": false,
+              "Name": "CPU Average",
+              "SelectedTempSource": {
+                "Identifier": "/intelcpu/0/temperature/6",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              },
+              "SelectedTime": 3
+            },
+            {
+              "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": true,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "CPU Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "50,30",
+          "75,100"
+        ],
+        "SelectedHysteresis": 5.0,
+        "SelectedResponseTime": 3,
+        "SelectedTempSource": {
+          "Identifier": "Time/CPU Average",
+          "IsHidden": false,
+          "Name": "CPU Average",
+          "SelectedTempSource": {
+            "Identifier": "/intelcpu/0/temperature/6",
+            "IsHidden": false,
+            "Name": "CPU Package",
+            "NickName": "CPU Package"
+          },
+          "SelectedTime": 3
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": true,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "GPU Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "20,35",
+          "50,35",
+          "75,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": true,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "Exhaust Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "40,30",
+          "75,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "Mix/Mix Sensor",
+          "IsHidden": false,
+          "Name": "Mix Sensor",
+          "SelectedMixFunction": 1,
+          "SelectedSensors": [
+            {
+              "Identifier": "Time/CPU Average",
+              "IsHidden": false,
+              "Name": "CPU Average",
+              "SelectedTempSource": {
+                "Identifier": "/intelcpu/0/temperature/6",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              },
+              "SelectedTime": 3
+            },
+            {
+              "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": true,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "CPU Stepped",
+        "OneWayHysteresis": false,
+        "Points": [
+          "30,30",
+          "30.1,40",
+          "40,40",
+          "40.1,50",
+          "50,50",
+          "50.1,60",
+          "60,60",
+          "60.1,70",
+          "70,70",
+          "70.1,100"
+        ],
+        "SelectedHysteresis": 5.0,
+        "SelectedResponseTime": 3,
+        "SelectedTempSource": {
+          "Identifier": "Time/CPU Average",
+          "IsHidden": false,
+          "Name": "CPU Average",
+          "SelectedTempSource": {
+            "Identifier": "/intelcpu/0/temperature/6",
+            "IsHidden": false,
+            "Name": "CPU Package",
+            "NickName": "CPU Package"
+          },
+          "SelectedTime": 3
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "CPU Stepped 2",
+        "OneWayHysteresis": false,
+        "Points": [
+          "45,30",
+          "45.1,45",
+          "55,45",
+          "55.1,60",
+          "65,60",
+          "65.1,75",
+          "75,75",
+          "75.1,100"
+        ],
+        "SelectedHysteresis": 5.0,
+        "SelectedResponseTime": 3,
+        "SelectedTempSource": {
+          "Identifier": "Time/CPU Average",
+          "IsHidden": false,
+          "Name": "CPU Average",
+          "SelectedTempSource": {
+            "Identifier": "/intelcpu/0/temperature/6",
+            "IsHidden": false,
+            "Name": "CPU Package",
+            "NickName": "CPU Package"
+          },
+          "SelectedTime": 3
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "GPU Stepped",
+        "OneWayHysteresis": false,
+        "Points": [
+          "45,35",
+          "45.1,50",
+          "55,50",
+          "55.1,65",
+          "65,65",
+          "65.1,80",
+          "75,80",
+          "75.1,100"
+        ],
+        "SelectedHysteresis": 5.0,
+        "SelectedResponseTime": 3,
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "Exhaust Stepped",
+        "OneWayHysteresis": false,
+        "Points": [
+          "40,35",
+          "40.1,45",
+          "50,45",
+          "50.1,55",
+          "60,55",
+          "60.1,70",
+          "70,70",
+          "70.1,85",
+          "75,85",
+          "75.1,100"
+        ],
+        "SelectedHysteresis": 5.0,
+        "SelectedResponseTime": 3,
+        "SelectedTempSource": {
+          "Identifier": "Mix/Mix Sensor",
+          "IsHidden": false,
+          "Name": "Mix Sensor",
+          "SelectedMixFunction": 1,
+          "SelectedSensors": [
+            {
+              "Identifier": "Time/CPU Average",
+              "IsHidden": false,
+              "Name": "CPU Average",
+              "SelectedTempSource": {
+                "Identifier": "/intelcpu/0/temperature/6",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              },
+              "SelectedTime": 3
+            },
+            {
+              "Identifier": "NVApiWrapper/0-TU104-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
+        }
+      }
+    ],
+    "FanSensors": [
+      {
+        "Identifier": "/lpc/nct6793d/fan/0",
+        "IsHidden": false,
+        "Name": "Fan #1",
+        "NickName": "Intake"
+      },
+      {
+        "Identifier": "/lpc/nct6793d/fan/1",
+        "IsHidden": false,
+        "Name": "Fan #2",
+        "NickName": "CPU"
+      },
+      {
+        "Identifier": "/lpc/nct6793d/fan/2",
+        "IsHidden": false,
+        "Name": "Fan #3",
+        "NickName": "GPU"
+      },
+      {
+        "Identifier": "/lpc/nct6793d/fan/3",
+        "IsHidden": true,
+        "Name": "Fan #4",
+        "NickName": "Fan #4"
+      },
+      {
+        "Identifier": "/lpc/nct6793d/fan/4",
+        "IsHidden": true,
+        "Name": "Fan #5",
+        "NickName": "Fan #5"
+      },
+      {
+        "Identifier": "/lpc/nct6793d/fan/5",
+        "IsHidden": false,
+        "Name": "Fan #6",
+        "NickName": "Rear Exhaust"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-TU104-A/fan/0",
+        "IsHidden": true,
+        "Name": "Fan 1 - NVIDIA GeForce RTX 2070 SUPER",
+        "NickName": "Fan 1 - NVIDIA GeForce RTX 2070 SUPER"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-TU104-A/fan/1",
+        "IsHidden": true,
+        "Name": "Fan 2 - NVIDIA GeForce RTX 2070 SUPER",
+        "NickName": "Fan 2 - NVIDIA GeForce RTX 2070 SUPER"
+      }
+    ],
+    "HideCalibration": false,
+    "HideFanSpeedCards": true,
+    "HorizontalUIOrientation": false,
+    "PrimaryColor": "#FF607D8B",
+    "SecondaryColor": "#FFAEEA00",
+    "SelectedTheme": "Dark",
+    "ShowHiddenCards": false,
+    "SyncThemeWithWindows": false,
+    "SyncTrayIconColorWithWindows": false,
+    "TemperatureSensors": [],
+    "TrayIconColor": "#FFFFFFFF",
+    "TrayIcons": []
+  },
+  "Sensors": {
+    "DisabledPlugins": [],
+    "DisableStorageSensors": false,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "EmbeddedEC": true,
+      "GPU": true,
+      "InpOut": false,
+      "Memory": true,
+      "Motherboard": true,
+      "PSU": false,
+      "Storage": true,
+      "ZeroRPMOverride": false
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": true,
+      "ZeroRPMOverride": false
+    },
+    "SensorCount": 39
+  }
+}
