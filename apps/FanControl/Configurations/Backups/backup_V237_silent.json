@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "245",
+  "__VERSION__": "237",
   "Main": {
     "Controls": [
       {
@@ -18,7 +18,7 @@
         "MinimumPercent": 0,
         "SelectedCommandStepUp": 10,
         "SelectedCommandStepDown": 5,
-        "ManualControlValue": 40,
+        "ManualControlValue": 0,
         "ManualControl": true,
         "ForceApply": false,
         "Calibration": null
@@ -125,7 +125,7 @@
         "MinimumPercent": 0,
         "SelectedCommandStepUp": 12,
         "SelectedCommandStepDown": 5,
-        "ManualControlValue": 60,
+        "ManualControlValue": 30,
         "ManualControl": true,
         "ForceApply": false,
         "Calibration": null
@@ -138,9 +138,7 @@
         "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
-        "PairedFanSensor": {
-          "Identifier": "NVApiWrapper/0-TU104-A/fan/0"
-        },
+        "PairedFanSensor": null,
         "SelectedStart": 0,
         "SelectedStop": 0,
         "MinimumPercent": 0,
@@ -159,9 +157,7 @@
         "Enable": false,
         "SelectedFanCurve": null,
         "SelectedOffset": 0,
-        "PairedFanSensor": {
-          "Identifier": "NVApiWrapper/0-TU104-A/fan/1"
-        },
+        "PairedFanSensor": null,
         "SelectedStart": 0,
         "SelectedStop": 0,
         "MinimumPercent": 0,
@@ -207,9 +203,6 @@
         "CommandMode": 0,
         "Name": "Intake Graph",
         "IsHidden": false,
-        "SelectedTempSource": {
-          "Identifier": "Mix/Mix Sensor"
-        },
         "Points": [
           "50,0",
           "50.1,30",
@@ -217,6 +210,9 @@
           "65.1,60",
           "75,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "Mix/Mix Sensor"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -232,13 +228,13 @@
         "CommandMode": 0,
         "Name": "CPU Graph",
         "IsHidden": true,
-        "SelectedTempSource": {
-          "Identifier": "Time/CPU Average"
-        },
         "Points": [
           "50,30",
           "75,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "Time/CPU Average"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -254,14 +250,14 @@
         "CommandMode": 0,
         "Name": "GPU Graph",
         "IsHidden": true,
-        "SelectedTempSource": {
-          "Identifier": "NVApiWrapper/0-TU104-A/sensor/0"
-        },
         "Points": [
           "20,35",
           "50,35",
           "75,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-TU104-A/sensor/0"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -277,13 +273,13 @@
         "CommandMode": 0,
         "Name": "Exhaust Graph",
         "IsHidden": true,
-        "SelectedTempSource": {
-          "Identifier": "Mix/Mix Sensor"
-        },
         "Points": [
           "40,30",
           "75,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "Mix/Mix Sensor"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -299,9 +295,6 @@
         "CommandMode": 0,
         "Name": "CPU Stepped",
         "IsHidden": true,
-        "SelectedTempSource": {
-          "Identifier": "Time/CPU Average"
-        },
         "Points": [
           "30,30",
           "30.1,40",
@@ -314,6 +307,9 @@
           "70,70",
           "70.1,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "Time/CPU Average"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -329,9 +325,6 @@
         "CommandMode": 0,
         "Name": "CPU Stepped 2",
         "IsHidden": false,
-        "SelectedTempSource": {
-          "Identifier": "Time/CPU Average"
-        },
         "Points": [
           "45,30",
           "45.1,45",
@@ -342,6 +335,9 @@
           "75,75",
           "75.1,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "Time/CPU Average"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -357,9 +353,6 @@
         "CommandMode": 0,
         "Name": "GPU Stepped",
         "IsHidden": false,
-        "SelectedTempSource": {
-          "Identifier": "NVApiWrapper/0-TU104-A/sensor/0"
-        },
         "Points": [
           "45,35",
           "45.1,50",
@@ -370,6 +363,9 @@
           "75,80",
           "75.1,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-TU104-A/sensor/0"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -385,9 +381,6 @@
         "CommandMode": 0,
         "Name": "Exhaust Stepped",
         "IsHidden": false,
-        "SelectedTempSource": {
-          "Identifier": "Mix/Mix Sensor"
-        },
         "Points": [
           "40,35",
           "40.1,45",
@@ -400,6 +393,9 @@
           "75,85",
           "75.1,100"
         ],
+        "SelectedTempSource": {
+          "Identifier": "Mix/Mix Sensor"
+        },
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "MaximumCommand": 100,
@@ -486,6 +482,7 @@
       "CPU": true,
       "EmbeddedEC": true,
       "GPU": true,
+      "InpOut": false,
       "Memory": true,
       "Motherboard": true,
       "PSU": false,
