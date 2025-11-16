@@ -43,12 +43,12 @@
 ::1       archive.local charterstone.local
 
 # Apps / Self-hosted stuffs
-127.0.0.1 5e.tools.local snippets.local
-::1       5e.tools.local snippets.local
+127.0.0.1 5etools.local codrops.local vamps.local
+::1       5etools.local codrops.local vamps.local
 
 # Sandboxes
-127.0.0.1 laravel.local phoenix.local wintercms.local wordpress.local
-::1       laravel.local phoenix.local wintercms.local wordpress.local
+127.0.0.1 wordpress.local
+::1       wordpress.local
 
 
 
@@ -57,6 +57,16 @@
 # ----------------------
 
 127.0.0.1 cc-api-data.adobe.io ic.adobe.io genuine.adobe.com prod.adobegenuine.com assets.adobedtm.com
+
+
+
+# ----------------------
+# Tracker blocking easy wins
+# ----------------------
+
+0.0.0.0 mobile.events.data.microsoft.com www.mobile.events.data.microsoft.com
+0.0.0.0 mobile.events.data.trafficmanager.net www.mobile.events.data.trafficmanager.net
+
 
 
 # ----------------------
