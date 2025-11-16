@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520093697,
+        "prev_ver": 536870914,
         "name": "Desktop",
         "uuid": "1fb436f3-2b74-45f6-a75e-36c79897e5ea",
         "id": "wasapi_output_capture",
@@ -33,7 +33,7 @@
         },
         "filters": [
             {
-                "prev_ver": 520093697,
+                "prev_ver": 536870914,
                 "name": "Limiter",
                 "uuid": "4c7d00a2-f6e3-427a-8a49-3ac5a55eb6ad",
                 "id": "limiter_filter",
@@ -61,7 +61,7 @@
         ]
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520093697,
+        "prev_ver": 536870914,
         "name": "Mic",
         "uuid": "7c68fec6-20f2-40e6-8173-cb50a7ca58f2",
         "id": "wasapi_input_capture",
@@ -72,7 +72,7 @@
         "mixers": 197,
         "sync": 0,
         "flags": 0,
-        "volume": 0.56234133243560791,
+        "volume": 0.5623413324356079,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -92,7 +92,7 @@
         "private_settings": {},
         "filters": [
             {
-                "prev_ver": 520093697,
+                "prev_ver": 536870914,
                 "name": "Noise Gate",
                 "uuid": "c0e3d940-34b4-45a8-aeae-35fa33a86d7b",
                 "id": "noise_gate_filter",
@@ -119,7 +119,7 @@
                 "private_settings": {}
             },
             {
-                "prev_ver": 520093697,
+                "prev_ver": 536870914,
                 "name": "Noise Suppression",
                 "uuid": "7c93d114-5e85-4e46-acaa-d468c8e3bf75",
                 "id": "noise_suppress_filter",
@@ -145,7 +145,7 @@
                 "private_settings": {}
             },
             {
-                "prev_ver": 520093697,
+                "prev_ver": 536870914,
                 "name": "Compressor",
                 "uuid": "e7625559-25db-49f7-b72c-e4eb4f8faa38",
                 "id": "compressor_filter",
@@ -171,43 +171,17 @@
                 "private_settings": {}
             },
             {
-                "prev_ver": 520093697,
+                "prev_ver": 536870914,
                 "name": "Compressor (AI Answer)",
                 "uuid": "5e38e9e0-533b-4e0b-b508-3df8855de295",
                 "id": "compressor_filter",
                 "versioned_id": "compressor_filter",
                 "settings": {
-                    "ratio": 3.0,
-                    "threshold": -24.0,
-                    "attack_time": 3,
-                    "release_time": 15,
+                    "ratio": 4.0,
+                    "threshold": -18.0,
+                    "attack_time": 6,
+                    "release_time": 60,
                     "output_gain": 4.0
-                },
-                "mixers": 255,
-                "sync": 0,
-                "flags": 0,
-                "volume": 1.0,
-                "balance": 0.5,
-                "enabled": false,
-                "muted": false,
-                "push-to-mute": false,
-                "push-to-mute-delay": 0,
-                "push-to-talk": false,
-                "push-to-talk-delay": 0,
-                "hotkeys": {},
-                "deinterlace_mode": 0,
-                "deinterlace_field_order": 0,
-                "monitoring_type": 0,
-                "private_settings": {}
-            },
-            {
-                "prev_ver": 520093697,
-                "name": "Limiter",
-                "uuid": "074bdb33-b15f-478c-8908-01bb0870e3a2",
-                "id": "limiter_filter",
-                "versioned_id": "limiter_filter",
-                "settings": {
-                    "threshold": -6.0
                 },
                 "mixers": 255,
                 "sync": 0,
@@ -227,15 +201,13 @@
                 "private_settings": {}
             },
             {
-                "prev_ver": 520093697,
-                "name": "Voxengo Marvel GEQ",
-                "uuid": "0463e0cc-a8db-4a77-a349-828a2b3bc83d",
-                "id": "vst_filter",
-                "versioned_id": "vst_filter",
+                "prev_ver": 536870914,
+                "name": "Limiter",
+                "uuid": "074bdb33-b15f-478c-8908-01bb0870e3a2",
+                "id": "limiter_filter",
+                "versioned_id": "limiter_filter",
                 "settings": {
-                    "chunk_data": "",
-                    "chunk_hash": "",
-                    "plugin_path": "C:/Program Files/Common Files/VST2/Voxengo/Marvel GEQ.dll"
+                    "threshold": -6.0
                 },
                 "mixers": 255,
                 "sync": 0,
@@ -255,7 +227,61 @@
                 "private_settings": {}
             },
             {
-                "prev_ver": 520093697,
+                "prev_ver": 536870914,
+                "name": "Limiter (AI Answer)",
+                "uuid": "751eba89-48f0-4e96-8360-0841b7302ea7",
+                "id": "limiter_filter",
+                "versioned_id": "limiter_filter",
+                "settings": {
+                    "threshold": -2.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 536870914,
+                "name": "Voxengo Marvel GEQ",
+                "uuid": "0463e0cc-a8db-4a77-a349-828a2b3bc83d",
+                "id": "vst_filter",
+                "versioned_id": "vst_filter",
+                "settings": {
+                    "chunk_data": "",
+                    "chunk_hash": "",
+                    "plugin_path": ""
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": false,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 536870914,
                 "name": "Voxengo Overtone GEQ",
                 "uuid": "5b39bb05-bbbc-499d-baee-49b2050eeaa0",
                 "id": "vst_filter",
@@ -263,7 +289,7 @@
                 "settings": {
                     "chunk_data": "",
                     "chunk_hash": "",
-                    "plugin_path": "C:/Program Files/Common Files/VST2/Voxengo/Overtone GEQ.dll"
+                    "plugin_path": ""
                 },
                 "mixers": 255,
                 "sync": 0,
@@ -284,8 +310,8 @@
             }
         ]
     },
-    "current_scene": "🎬 ❗ PRIMARY DISPLAY ❗",
-    "current_program_scene": "🎬 ❗ PRIMARY DISPLAY ❗",
+    "current_scene": "🎬 ❗ PHONE ❗",
+    "current_program_scene": "🎬 ❗ PHONE ❗",
     "scene_order": [
         {
             "name": "⚠ Scene Dev"
@@ -306,13 +332,7 @@
             "name": "🎬 ❗ Desktop Fallback ❗"
         },
         {
-            "name": "🎬 Fragpunk"
-        },
-        {
-            "name": "🎬 Rivals"
-        },
-        {
-            "name": "🎬 Last Epoch"
+            "name": "🎬 ❗ PHONE ❗"
         },
         {
             "name": "🎬 Apex"
@@ -321,46 +341,22 @@
             "name": "🎬 Baldur's Gate 3"
         },
         {
-            "name": "🎬 BattleBit"
-        },
-        {
-            "name": "🎬 Battlefield 2042"
-        },
-        {
             "name": "🎬 Cyberpunk"
         },
         {
             "name": "🎬 Divinity OS2"
         },
         {
-            "name": "🎬 DRG"
+            "name": "🎬 Fragpunk"
         },
         {
-            "name": "🎬 Gloomhaven"
-        },
-        {
-            "name": "🎬 Horizon Zero Dawn"
-        },
-        {
-            "name": "🎬 Magicraft"
-        },
-        {
-            "name": "🎬 Overwatch"
+            "name": "🎬 Last Epoch"
         },
         {
             "name": "🎬 Rocket League"
         },
         {
-            "name": "🎬 Ship of Harkinian (OoT Reloaded)"
-        },
-        {
             "name": "🎬 Splitgate"
-        },
-        {
-            "name": "🎬 Terraformers"
-        },
-        {
-            "name": "🎬 Vampire Survivors"
         },
         {
             "name": "🎬 Witcher 3"
@@ -369,7 +365,7 @@
     "name": "Main Scene Collection",
     "sources": [
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Cyberpunk",
             "uuid": "0447975e-6146-424a-afb0-2bfad06235d5",
             "id": "scene",
@@ -511,10 +507,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Divinity OS2",
             "uuid": "2dbf8951-8cc0-4cd7-b507-54f93f05ec03",
             "id": "scene",
@@ -656,10 +653,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 Splitgate",
             "uuid": "8537e2d1-76a8-4737-b31f-ed5ef21fb2e9",
             "id": "game_capture",
@@ -672,7 +670,7 @@
             "mixers": 3,
             "sync": 0,
             "flags": 0,
-            "volume": 0.39810717105865479,
+            "volume": 0.3981071710586548,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -694,7 +692,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Splitgate",
             "uuid": "93349b42-37c2-462c-b712-4b24b9711a64",
             "id": "scene",
@@ -836,155 +834,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 Overwatch",
-            "uuid": "63b46d51-ca10-4589-a9c9-d957559092c5",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "custom_size": false,
-                "id_counter": 8,
-                "items": [
-                    {
-                        "name": "🕹 Overwatch",
-                        "source_uuid": "78c3118b-a443-4e1f-99e1-d4eab6466238",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 4,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 Game OW",
             "uuid": "c998fb0a-0f8b-4218-8be9-3d9cbc75909c",
             "id": "wasapi_process_output_capture",
@@ -996,7 +850,7 @@
             "mixers": 3,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -1016,55 +870,14 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🕹 Overwatch",
-            "uuid": "78c3118b-a443-4e1f-99e1-d4eab6466238",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Overwatch:TankWindowClass:Overwatch.exe",
-                "capture_audio": true,
-                "capture_mode": "window",
-                "priority": 2,
-                "capture_cursor": true,
-                "limit_framerate": false,
-                "capture_overlays": false,
-                "anti_cheat_hook": true,
-                "hook_rate": 1
-            },
-            "mixers": 3,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 ❗ PRIMARY DISPLAY ❗",
             "uuid": "067808a8-453e-4a9a-bcdf-750c75a8ab40",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 7,
+                "id_counter": 8,
                 "items": [
                     {
                         "name": "🖥 Primary",
@@ -1124,7 +937,7 @@
                     {
                         "name": "🔊 App Audio",
                         "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -1140,6 +953,61 @@
                         "crop_right": 0,
                         "crop_bottom": 0,
                         "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "🔊 Discord",
+                        "source_uuid": "5a299399-ce01-4bd2-959e-c0e0b54b806b",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 8,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -1194,15 +1062,18 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.8": [],
+                "libobs.hide_scene_item.8": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🖥 Primary",
             "uuid": "4142528d-9fb4-46e7-9fd0-c88828d806c1",
             "id": "monitor_capture",
@@ -1229,76 +1100,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🔊 Browser",
-            "uuid": "c4811149-578c-4e9b-8f84-906ed41785fe",
-            "id": "audio_capture",
-            "versioned_id": "audio_capture",
-            "settings": {
-                "active_session_list": "obs64.exe",
-                "executable_list": [
-                    {
-                        "hidden": false,
-                        "selected": false,
-                        "value": "msedge.exe"
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.63095736503601074,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "hotkey_start": [],
-                "hotkey_stop": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 520093697,
-                    "name": "Limiter",
-                    "uuid": "a5dcfe90-85e7-4a4f-9684-a7a1030852f0",
-                    "id": "limiter_filter",
-                    "versioned_id": "limiter_filter",
-                    "settings": {
-                        "threshold": -16.0,
-                        "release_time": 60
-                    },
-                    "mixers": 255,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 DOS2",
             "uuid": "5c676ad6-b600-46e5-b23d-057bdfaf61c1",
             "id": "game_capture",
@@ -1311,7 +1113,7 @@
             "mixers": 3,
             "sync": 0,
             "flags": 0,
-            "volume": 0.39810717105865479,
+            "volume": 0.3981071710586548,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -1333,152 +1135,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 Horizon Zero Dawn",
-            "uuid": "578f90c5-2c2d-4385-9716-26ccd74f7e3c",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "custom_size": false,
-                "id_counter": 3,
-                "items": [
-                    {
-                        "name": "🕹 HZD",
-                        "source_uuid": "1f601eab-fc72-41b3-89b5-153e7e3f38a1",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 3,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 ❗ ANY FULLSCREEN ❗",
             "uuid": "5b6f61c0-3d99-4425-9025-b285bff20449",
             "id": "scene",
@@ -1677,10 +1334,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 Cyberpunk",
             "uuid": "6fcb2a5e-c803-4e4b-a8cc-435fe1d7c961",
             "id": "game_capture",
@@ -1693,7 +1351,7 @@
             "mixers": 3,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -1715,367 +1373,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 Terraformers",
-            "uuid": "34d28377-ad41-4bf7-b9e5-8dd16a867d17",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 3,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 Terraformers",
-                        "source_uuid": "cd116799-4aa3-462b-b94b-5c147a2b7581",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 3,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 Terraformers",
-            "uuid": "cd116799-4aa3-462b-b94b-5c147a2b7581",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Terraformers:UnityWndClass:Terraformers.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 3,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🎬 BattleBit",
-            "uuid": "264afea3-3121-44fc-a9da-dc49169ebf08",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 3,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 BattleBit",
-                        "source_uuid": "d4348e4f-a7f5-43b3-afdc-743ae8389c7e",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 BattleBit",
-            "uuid": "d4348e4f-a7f5-43b3-afdc-743ae8389c7e",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "BattleBit:UnityWndClass:BattleBit.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 3,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 Game BB",
             "uuid": "aaabe534-5b41-47b4-a9c5-5978cebd21b4",
             "id": "wasapi_process_output_capture",
@@ -2086,7 +1384,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -2106,152 +1404,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 Vampire Survivors",
-            "uuid": "d649aa45-4fc7-483d-866d-d4a58087720b",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 3,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 Vamps",
-                        "source_uuid": "6ac7188c-cc62-4ddf-9091-389adcbcd3e8",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Apex",
             "uuid": "58126614-1eef-4807-8a73-54336401ffdf",
             "id": "scene",
@@ -2393,10 +1546,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 Apex",
             "uuid": "3d69567a-4ed5-4df7-b695-17f3767cc44a",
             "id": "game_capture",
@@ -2409,7 +1563,7 @@
             "mixers": 3,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -2431,7 +1585,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 Game Apex",
             "uuid": "e01abca7-796b-416c-871c-7b0e684db712",
             "id": "wasapi_process_output_capture",
@@ -2442,7 +1596,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -2462,152 +1616,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 Ship of Harkinian (OoT Reloaded)",
-            "uuid": "b2dde7e1-5f37-497b-8a3a-1be83f4d742e",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 5,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 Harkinian",
-                        "source_uuid": "26ba6d67-40c5-44d7-be14-6b8af5706c61",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 Game Audio",
             "uuid": "be51f49f-bf97-441b-8891-7847cd1e013b",
             "id": "scene",
@@ -2920,10 +1929,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 App Audio",
             "uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
             "id": "scene",
@@ -3511,10 +2521,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 Game SG",
             "uuid": "2637e5a9-9f19-48db-867b-eca943143282",
             "id": "wasapi_process_output_capture",
@@ -3525,7 +2536,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.39810717105865479,
+            "volume": 0.3981071710586548,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3545,7 +2556,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 App Brave",
             "uuid": "ee03c117-6604-460c-8528-253648187444",
             "id": "wasapi_process_output_capture",
@@ -3557,7 +2568,7 @@
             "mixers": 192,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3577,293 +2588,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 DRG",
-            "uuid": "492e3bff-5b79-403d-b22e-7a2a56c6a072",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 3,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 DRG",
-                        "source_uuid": "0fe1f6e7-9aca-4d43-bdcc-6a066b9147f0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 DRG",
-            "uuid": "0fe1f6e7-9aca-4d43-bdcc-6a066b9147f0",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Deep Rock Galactic  :UnrealWindow:FSD-Win64-Shipping.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 3,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 HZD",
-            "uuid": "1f601eab-fc72-41b3-89b5-153e7e3f38a1",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Horizon Zero Dawn#3A Complete Edition:PIGS_MainWnd:HorizonZeroDawn.exe",
-                "capture_audio": true,
-                "capture_mode": "window",
-                "rgb10a2_space": "2100pq"
-            },
-            "mixers": 3,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 Harkinian",
-            "uuid": "26ba6d67-40c5-44d7-be14-6b8af5706c61",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Ship of Harkinian (DirectX 11):N64GAME:soh.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 3,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 Vamps",
-            "uuid": "6ac7188c-cc62-4ddf-9091-389adcbcd3e8",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Vampire Survivors:UnityWndClass:VampireSurvivors.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 3,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎵 MPV",
             "uuid": "8efef34e-e0d7-4337-a401-0907cfb633f5",
             "id": "wasapi_process_output_capture",
@@ -3875,7 +2600,7 @@
             "mixers": 9,
             "sync": 0,
             "flags": 0,
-            "volume": 0.50118720531463623,
+            "volume": 0.5011872053146362,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3895,7 +2620,7 @@
             "private_settings": {},
             "filters": [
                 {
-                    "prev_ver": 520093697,
+                    "prev_ver": 536870914,
                     "name": "Limiter",
                     "uuid": "ea509a2e-88be-40cd-a8fc-34f6a3f12466",
                     "id": "limiter_filter",
@@ -3923,7 +2648,7 @@
             ]
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎵 VLC",
             "uuid": "92f2b6b1-6259-40a0-9f32-d854a4b6c359",
             "id": "wasapi_process_output_capture",
@@ -3935,7 +2660,7 @@
             "mixers": 9,
             "sync": 0,
             "flags": 0,
-            "volume": 0.63095736503601074,
+            "volume": 0.6309573650360107,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3955,7 +2680,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎵 MPC",
             "uuid": "f5696fdf-e03d-4564-a6df-4f6de856373d",
             "id": "wasapi_process_output_capture",
@@ -3967,7 +2692,7 @@
             "mixers": 9,
             "sync": 0,
             "flags": 0,
-            "volume": 0.63095736503601074,
+            "volume": 0.6309573650360107,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3987,7 +2712,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎵 Spotify",
             "uuid": "06835e9a-ee0f-4853-ad47-9700b55c599a",
             "id": "wasapi_process_output_capture",
@@ -4019,7 +2744,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Rocket League",
             "uuid": "e733aa78-8d2f-4025-9ca4-cdbc924bef44",
             "id": "scene",
@@ -4161,10 +2886,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 Rocket League",
             "uuid": "8846c3e6-fafd-417b-862c-dc18de184861",
             "id": "game_capture",
@@ -4177,7 +2903,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -4199,7 +2925,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Witcher 3",
             "uuid": "3f4c63b6-4776-4099-aaa6-4c1360839683",
             "id": "scene",
@@ -4341,10 +3067,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 Game W3",
             "uuid": "9654a4a4-fc9d-48b2-a499-36fea50c53d4",
             "id": "wasapi_process_output_capture",
@@ -4355,7 +3082,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -4375,7 +3102,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 Witcher 3",
             "uuid": "cd8dec00-4b77-4cb8-8e9c-6dbc89cb87c8",
             "id": "game_capture",
@@ -4389,7 +3116,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -4411,7 +3138,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Baldur's Gate 3",
             "uuid": "71d28145-ff43-4eb2-80ae-a6ff775d1459",
             "id": "scene",
@@ -4553,10 +3280,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 BG3",
             "uuid": "94b755e8-9c90-4b3b-b16d-3acf6d671cdc",
             "id": "game_capture",
@@ -4569,7 +3297,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -4591,547 +3319,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 Gloomhaven",
-            "uuid": "0277799d-2c0d-493c-ab9a-cf0d051c1994",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 3,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 Gloomhaven",
-                        "source_uuid": "003a7cf2-712d-4bb2-8af8-de7c25398d11",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 3,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 Gloomhaven",
-            "uuid": "003a7cf2-712d-4bb2-8af8-de7c25398d11",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Gloomhaven:UnityWndClass:GH.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 195,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🎬 Battlefield 2042",
-            "uuid": "2cbf5b47-3f84-4ca7-b370-deced4b5aeaf",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 3,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 BF2042",
-                        "source_uuid": "af79c6ad-0e0e-4f42-ac25-badaeb3a3857",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 3,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 BF2042",
-            "uuid": "af79c6ad-0e0e-4f42-ac25-badaeb3a3857",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Battlefield™ 2042:Battlefield™ 2042:BF2042.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 195,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🎬 Magicraft",
-            "uuid": "85feb76b-98cd-42c4-af91-d152150d825f",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 3,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 Magicraft",
-                        "source_uuid": "b933a69f-ee0c-4a4b-97c3-35c6e63fc436",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 Magicraft",
-            "uuid": "b933a69f-ee0c-4a4b-97c3-35c6e63fc436",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Magicraft:UnityWndClass:Magicraft.exe",
-                "capture_audio": false,
-                "capture_mode": "window"
-            },
-            "mixers": 195,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Last Epoch",
             "uuid": "a113e42f-751e-4769-8a72-42bddce9c943",
             "id": "scene",
@@ -5273,10 +3461,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 Last Epoch",
             "uuid": "7c2b283c-ee91-4dc8-9261-856008e559ce",
             "id": "game_capture",
@@ -5289,7 +3478,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -5311,187 +3500,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
-            "name": "🎬 Rivals",
-            "uuid": "c398dd4e-074d-4e32-865e-fcfab447efef",
-            "id": "scene",
-            "versioned_id": "scene",
-            "settings": {
-                "id_counter": 2,
-                "custom_size": false,
-                "items": [
-                    {
-                        "name": "🕹 Rivals",
-                        "source_uuid": "325cb78e-9d03-42e3-89af-9234bd816869",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 1,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "🔊 App Audio",
-                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "🕹 Rivals",
-            "uuid": "325cb78e-9d03-42e3-89af-9234bd816869",
-            "id": "game_capture",
-            "versioned_id": "game_capture",
-            "settings": {
-                "window": "Marvel Rivals  :UnrealWindow:Marvel-Win64-Shipping.exe",
-                "capture_audio": true,
-                "capture_mode": "window"
-            },
-            "mixers": 195,
-            "sync": 0,
-            "flags": 0,
-            "volume": 0.31622776389122009,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 Fragpunk",
             "uuid": "7c6d00bb-859a-492f-a5b3-f696c6f679f4",
             "id": "scene",
@@ -5633,10 +3642,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 Fragpunk",
             "uuid": "3b3eccda-ef7b-40a7-a2d4-64e59e4f412b",
             "id": "game_capture",
@@ -5649,7 +3659,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -5671,7 +3681,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 App Edge",
             "uuid": "a3e10e5b-cc8f-4606-b77f-ed3779fa3b50",
             "id": "wasapi_process_output_capture",
@@ -5682,7 +3692,7 @@
             "mixers": 192,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -5702,7 +3712,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🔊 Discord",
             "uuid": "5a299399-ce01-4bd2-959e-c0e0b54b806b",
             "id": "wasapi_process_output_capture",
@@ -5715,7 +3725,7 @@
             "mixers": 209,
             "sync": 0,
             "flags": 0,
-            "volume": 1.0,
+            "volume": 0.6309573650360107,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -5735,7 +3745,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "⚠ Scene Dev",
             "uuid": "8565f538-0f62-41dc-a123-e860b2f8f9d5",
             "id": "scene",
@@ -5762,10 +3772,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎵 MusicBee",
             "uuid": "0cb97a41-4f4d-49e5-bd3c-330bdefc3579",
             "id": "wasapi_process_output_capture",
@@ -5776,7 +3787,7 @@
             "mixers": 201,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.3162277638912201,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -5796,7 +3807,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🕹 GAME",
             "uuid": "da4662a7-fd1f-4b92-a5d3-4431c90c6c75",
             "id": "game_capture",
@@ -5807,7 +3818,7 @@
             "mixers": 195,
             "sync": 0,
             "flags": 0,
-            "volume": 0.31622776389122009,
+            "volume": 0.5011872053146362,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -5829,7 +3840,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "🎬 ❗ Desktop Fallback ❗",
             "uuid": "4be73c96-363a-483a-9463-ff70e06b5119",
             "id": "scene",
@@ -5949,61 +3960,6 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "🔊 Browser",
-                        "source_uuid": "c4811149-578c-4e9b-8f84-906ed41785fe",
-                        "visible": false,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
                         "name": "🔊 App Audio",
                         "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
                         "visible": true,
@@ -6077,10 +4033,309 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870914,
+            "name": "🎬 ❗ PHONE ❗",
+            "uuid": "45de0f14-a07d-4311-bc02-02f1ae4689a8",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 5,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "🖥 Primary",
+                        "source_uuid": "4142528d-9fb4-46e7-9fd0-c88828d806c1",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 657.0,
+                            "y": 1314.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0958904027938843,
+                            "y": 1.0958904027938843
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "🔊 App Audio",
+                        "source_uuid": "c17a3ca5-a5fe-4ae0-8d79-518b2609dcd0",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 657.0,
+                            "y": 1314.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "🔊 Discord",
+                        "source_uuid": "5a299399-ce01-4bd2-959e-c0e0b54b806b",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 657.0,
+                            "y": 1314.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 3,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0958904027938843,
+                            "y": 1.0958904027938843
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "DroidCam OBS",
+                        "source_uuid": "4f28c868-cf57-4430-bff9-0d691244dd46",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 657.0,
+                            "y": 1314.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 4,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.3333333730697632,
+                            "y": 1.3333333730697632
+                        },
+                        "scale_rel": {
+                            "x": 1.2166666984558105,
+                            "y": 1.2166666984558105
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": []
+                "libobs.hide_scene_item.3": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870914,
+            "name": "DroidCam OBS",
+            "uuid": "4f28c868-cf57-4430-bff9-0d691244dd46",
+            "id": "droidcam_obs",
+            "versioned_id": "droidcam_obs",
+            "settings": {
+                "device_list": "dev_id_wifi",
+                "resolution_str": "1920x1080",
+                "enable_aduio": false,
+                "cur_dev_id": "dev_id_wifi",
+                "cur_dev_type": 1,
+                "activated": true,
+                "deactivate_wns": true,
+                "wifi_ip": "100.75.88.108",
+                "cur_dev_ip": "100.75.88.108",
+                "remote_url": "http://100.75.88.108:4747"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -6090,7 +4345,7 @@
     ],
     "groups": [
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "Media",
             "uuid": "f5cdaf7f-4b4f-46b3-950c-986a44ffa480",
             "id": "group",
@@ -6404,10 +4659,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 536870914,
             "name": "Browsers",
             "uuid": "da6d4938-bae0-42f8-b46a-b15adb462f7d",
             "id": "group",
@@ -6550,6 +4806,7 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         }
     ],
@@ -6578,11 +4835,12 @@
     ],
     "transitions": [],
     "saved_projectors": [],
+    "canvases": [],
     "current_transition": "Fade",
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": 0,
+    "scaling_level": -22,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
