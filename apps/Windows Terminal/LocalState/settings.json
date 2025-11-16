@@ -4,6 +4,10 @@
     "actions": 
     [
         {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -13,8 +17,8 @@
             "id": "User.splitPane.A6751878"
         },
         {
-            "command": "find",
-            "id": "User.find"
+            "command": "paste",
+            "id": "User.paste"
         },
         {
             "command": 
@@ -22,10 +26,6 @@
                 "action": "newTab"
             },
             "id": "User.newTab.5DEADB41"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste"
         },
         {
             "command": "openNewTabDropdown",
@@ -78,12 +78,12 @@
             "keys": "ctrl+shift+t"
         },
         {
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
             "id": "User.find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
         },
         {
             "id": null,
@@ -149,13 +149,6 @@
                 "icon": "ms-appx:///ProfileIcons/pwsh.png",
                 "name": "PowerShell (admin)",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "~"
             },
             {
                 "commandline": "C:\\Windows\\system32\\wsl.exe -d Ubuntu",
@@ -225,19 +218,6 @@
                 "useAcrylic": false
             },
             {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": true,
-                "icon": "C:\\Users\\BK\\Pictures\\Icons\\ubuntu.ico",
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
-                "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
-                "hidden": true,
-                "name": "Ubuntu-24.04",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
                 "guid": "{d8e96812-b789-5068-a5ae-10b2fb53e95f}",
                 "hidden": false,
                 "name": "Ubuntu 24.04.1 LTS",
@@ -260,9 +240,9 @@
                 "name": "Elvish (admin)"
             },
             {
-                "guid": "{2fd45b92-bb9a-52ae-8db3-5530061b75e1}",
+                "guid": "{48f000d1-00e5-529d-90a1-4bc505dbcdc6}",
                 "hidden": false,
-                "name": "FedoraLinux-42",
+                "name": "Ubuntu",
                 "source": "Microsoft.WSL"
             }
         ]
