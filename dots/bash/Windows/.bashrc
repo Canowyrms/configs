@@ -30,8 +30,8 @@ shopt -s histappend
 HISTCONTROL=ignoreboth
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # immediately append history
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
