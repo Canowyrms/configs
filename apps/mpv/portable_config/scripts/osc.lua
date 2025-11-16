@@ -2210,9 +2210,11 @@ function osc_init()
 
     if user_opts.scrollcontrols then
         ne.eventresponder["wheel_up_press"] =
-            function () mp.commandv("osd-auto", "seek",  10) end
+            --function () mp.commandv("osd-auto", "seek",  10) end
+            function () mp.commandv("seek",  10, "exact") end
         ne.eventresponder["wheel_down_press"] =
-            function () mp.commandv("osd-auto", "seek", -10) end
+            --function () mp.commandv("osd-auto", "seek", -10) end
+            function () mp.commandv("seek", -10, "exact") end
     end
 
 
