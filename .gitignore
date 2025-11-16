@@ -5,6 +5,7 @@
 # FanControl
 /apps/FanControl/Configurations/*
 !/apps/FanControl/Configurations/*.json
+!/apps/FanControl/Configurations/Backups
 
 # FileZilla
 /apps/FileZilla/config/queue.sqlite3
