@@ -1,97 +1,55 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-        {
-            "command": "find",
-            "id": "User.find"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab"
-            },
-            "id": "User.newTab.5DEADB41"
-        },
-        {
-            "command": "openNewTabDropdown",
-            "id": "User.openNewTabDropdown"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2"
-        },
-        {
-            "command": 
-            {
-                "action": "closeTab"
-            },
-            "id": "User.closeTab.0"
-        }
-    ],
+    "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-    "disableAnimations": true,
     "keybindings": 
     [
-        {
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
-        },
         {
             "id": null,
             "keys": "ctrl+shift+space"
         },
         {
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+t"
-        },
-        {
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "id": "User.openNewTabDropdown",
-            "keys": "ctrl+space"
+            "id": null,
+            "keys": "ctrl+shift+f"
         },
         {
             "id": null,
             "keys": "ctrl+shift+t"
         },
         {
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "id": null,
             "keys": "ctrl+shift+w"
         },
         {
-            "id": "User.closeTab.0",
+            "id": "Terminal.ClosePane",
             "keys": "ctrl+w"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "Terminal.FindText",
+            "keys": "ctrl+f"
+        },
+        {
+            "id": "Terminal.OpenNewTab",
+            "keys": "ctrl+t"
+        },
+        {
+            "id": "Terminal.OpenNewTabDropdown",
+            "keys": "ctrl+space"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
         }
     ],
     "newTabMenu": 
@@ -149,15 +107,6 @@
                 "icon": "ms-appx:///ProfileIcons/pwsh.png",
                 "name": "PowerShell (admin)",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "commandline": "C:\\Windows\\system32\\wsl.exe -d Ubuntu",
-                "elevate": true,
-                "guid": "{8c76c9ac-ff8a-4a8c-a8f2-90b811f5a92a}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "Ubuntu (admin)",
-                "startingDirectory": "~"
             },
             {
                 "commandline": "C:\\Users\\BK\\scoop\\apps\\nu\\current\\nu.exe",
@@ -239,6 +188,15 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Microsoft.WSL",
+                "startingDirectory": "~"
+            },
+            {
+                "commandline": "C:\\Windows\\system32\\wsl.exe -d Ubuntu",
+                "elevate": true,
+                "guid": "{8c76c9ac-ff8a-4a8c-a8f2-90b811f5a92a}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "Ubuntu (admin)",
                 "startingDirectory": "~"
             }
         ]
