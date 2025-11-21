@@ -135,6 +135,7 @@
 	"redhat.telemetry.enabled": false,
 
 	"scm.defaultViewMode": "tree",
+	"scm.repositories.selectionMode": "single",
 
 	"security.allowedUNCHosts": [
 		"bk-desktop",
