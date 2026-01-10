@@ -11,7 +11,7 @@
         "mixers": 224,
         "sync": 0,
         "flags": 0,
-        "volume": 1.0,
+        "volume": 0.6309573650360107,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -39,7 +39,8 @@
                 "id": "limiter_filter",
                 "versioned_id": "limiter_filter",
                 "settings": {
-                    "threshold": -6.0
+                    "threshold": -6.0,
+                    "release_time": 120
                 },
                 "mixers": 255,
                 "sync": 0,
@@ -67,12 +68,13 @@
         "id": "wasapi_input_capture",
         "versioned_id": "wasapi_input_capture",
         "settings": {
-            "device_id": "{0.0.1.00000000}.{f0464c2c-7744-4063-8c8a-2d1cc3bc4f1d}"
+            "device_id": "{0.0.1.00000000}.{f0464c2c-7744-4063-8c8a-2d1cc3bc4f1d}",
+            "use_device_timing": true
         },
         "mixers": 197,
         "sync": 0,
         "flags": 0,
-        "volume": 0.5623413324356079,
+        "volume": 0.6309573650360107,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -93,20 +95,19 @@
         "filters": [
             {
                 "prev_ver": 536870914,
-                "name": "Noise Gate",
-                "uuid": "c0e3d940-34b4-45a8-aeae-35fa33a86d7b",
-                "id": "noise_gate_filter",
-                "versioned_id": "noise_gate_filter",
+                "name": "Noise Suppression",
+                "uuid": "7c93d114-5e85-4e46-acaa-d468c8e3bf75",
+                "id": "noise_suppress_filter",
+                "versioned_id": "noise_suppress_filter_v2",
                 "settings": {
-                    "open_threshold": -36.0,
-                    "close_threshold": -42.0
+                    "method": "rnnoise"
                 },
                 "mixers": 255,
                 "sync": 0,
                 "flags": 0,
                 "volume": 1.0,
                 "balance": 0.5,
-                "enabled": true,
+                "enabled": false,
                 "muted": false,
                 "push-to-mute": false,
                 "push-to-mute-delay": 0,
@@ -120,12 +121,13 @@
             },
             {
                 "prev_ver": 536870914,
-                "name": "Noise Suppression",
-                "uuid": "7c93d114-5e85-4e46-acaa-d468c8e3bf75",
-                "id": "noise_suppress_filter",
-                "versioned_id": "noise_suppress_filter_v2",
+                "name": "Noise Gate",
+                "uuid": "c0e3d940-34b4-45a8-aeae-35fa33a86d7b",
+                "id": "noise_gate_filter",
+                "versioned_id": "noise_gate_filter",
                 "settings": {
-                    "method": "rnnoise"
+                    "open_threshold": -36.0,
+                    "close_threshold": -42.0
                 },
                 "mixers": 255,
                 "sync": 0,
@@ -172,36 +174,6 @@
             },
             {
                 "prev_ver": 536870914,
-                "name": "Compressor (AI Answer)",
-                "uuid": "5e38e9e0-533b-4e0b-b508-3df8855de295",
-                "id": "compressor_filter",
-                "versioned_id": "compressor_filter",
-                "settings": {
-                    "ratio": 4.0,
-                    "threshold": -18.0,
-                    "attack_time": 6,
-                    "release_time": 60,
-                    "output_gain": 4.0
-                },
-                "mixers": 255,
-                "sync": 0,
-                "flags": 0,
-                "volume": 1.0,
-                "balance": 0.5,
-                "enabled": true,
-                "muted": false,
-                "push-to-mute": false,
-                "push-to-mute-delay": 0,
-                "push-to-talk": false,
-                "push-to-talk-delay": 0,
-                "hotkeys": {},
-                "deinterlace_mode": 0,
-                "deinterlace_field_order": 0,
-                "monitoring_type": 0,
-                "private_settings": {}
-            },
-            {
-                "prev_ver": 536870914,
                 "name": "Limiter",
                 "uuid": "074bdb33-b15f-478c-8908-01bb0870e3a2",
                 "id": "limiter_filter",
@@ -228,12 +200,125 @@
             },
             {
                 "prev_ver": 536870914,
+                "name": "🔶 Divider 1 🔶",
+                "uuid": "43de2df4-c9e2-40f3-aa56-5313b86f2cf3",
+                "id": "vst_filter",
+                "versioned_id": "vst_filter",
+                "settings": {
+                    "chunk_data": "",
+                    "chunk_hash": ""
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": false,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 536870914,
+                "name": "Compressor (AI Answer)",
+                "uuid": "5e38e9e0-533b-4e0b-b508-3df8855de295",
+                "id": "compressor_filter",
+                "versioned_id": "compressor_filter",
+                "settings": {
+                    "ratio": 4.0,
+                    "threshold": -18.0,
+                    "attack_time": 6,
+                    "release_time": 60,
+                    "output_gain": 4.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": false,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 536870914,
                 "name": "Limiter (AI Answer)",
                 "uuid": "751eba89-48f0-4e96-8360-0841b7302ea7",
                 "id": "limiter_filter",
                 "versioned_id": "limiter_filter",
                 "settings": {
-                    "threshold": -2.0
+                    "threshold": -3.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": false,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 536870914,
+                "name": "🔶 Divider 2 🔶",
+                "uuid": "ab510c8f-5b96-410d-af18-096cf0ea4851",
+                "id": "vst_filter",
+                "versioned_id": "vst_filter",
+                "settings": {
+                    "chunk_data": "",
+                    "chunk_hash": ""
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": false,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 536870914,
+                "name": "Noise Gate v2",
+                "uuid": "32103527-bf9c-4cf2-9d8c-53709ee8cadb",
+                "id": "noise_gate_filter",
+                "versioned_id": "noise_gate_filter",
+                "settings": {
+                    "open_threshold": -36.0,
+                    "close_threshold": -42.0,
+                    "hold_time": 300,
+                    "attack_time": 15
                 },
                 "mixers": 255,
                 "sync": 0,
@@ -254,21 +339,22 @@
             },
             {
                 "prev_ver": 536870914,
-                "name": "Voxengo Marvel GEQ",
-                "uuid": "0463e0cc-a8db-4a77-a349-828a2b3bc83d",
-                "id": "vst_filter",
-                "versioned_id": "vst_filter",
+                "name": "Compressor v3",
+                "uuid": "5a53dd97-b0ba-4f6c-a822-a08bf251edab",
+                "id": "compressor_filter",
+                "versioned_id": "compressor_filter",
                 "settings": {
-                    "chunk_data": "",
-                    "chunk_hash": "",
-                    "plugin_path": ""
+                    "ratio": 4.0,
+                    "release_time": 100,
+                    "threshold": -10.0,
+                    "output_gain": 5.0
                 },
                 "mixers": 255,
                 "sync": 0,
                 "flags": 0,
                 "volume": 1.0,
                 "balance": 0.5,
-                "enabled": false,
+                "enabled": true,
                 "muted": false,
                 "push-to-mute": false,
                 "push-to-mute-delay": 0,
@@ -282,21 +368,20 @@
             },
             {
                 "prev_ver": 536870914,
-                "name": "Voxengo Overtone GEQ",
-                "uuid": "5b39bb05-bbbc-499d-baee-49b2050eeaa0",
-                "id": "vst_filter",
-                "versioned_id": "vst_filter",
+                "name": "Limiter v3",
+                "uuid": "b75c0920-60df-422d-87f2-1c0eec42d4d8",
+                "id": "limiter_filter",
+                "versioned_id": "limiter_filter",
                 "settings": {
-                    "chunk_data": "",
-                    "chunk_hash": "",
-                    "plugin_path": ""
+                    "threshold": -4.0,
+                    "release_time": 100
                 },
                 "mixers": 255,
                 "sync": 0,
                 "flags": 0,
                 "volume": 1.0,
                 "balance": 0.5,
-                "enabled": false,
+                "enabled": true,
                 "muted": false,
                 "push-to-mute": false,
                 "push-to-mute-delay": 0,
@@ -310,8 +395,8 @@
             }
         ]
     },
-    "current_scene": "🎬 ❗ PHONE ❗",
-    "current_program_scene": "🎬 ❗ PHONE ❗",
+    "current_scene": "🔊 App Audio",
+    "current_program_scene": "🔊 App Audio",
     "scene_order": [
         {
             "name": "⚠ Scene Dev"
@@ -877,7 +962,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 8,
+                "id_counter": 9,
                 "items": [
                     {
                         "name": "🖥 Primary",
@@ -3725,7 +3810,7 @@
             "mixers": 209,
             "sync": 0,
             "flags": 0,
-            "volume": 0.6309573650360107,
+            "volume": 0.6302061676979065,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3782,12 +3867,12 @@
             "id": "wasapi_process_output_capture",
             "versioned_id": "wasapi_process_output_capture",
             "settings": {
-                "window": "Naxatras - Utopian Structures - MusicBee:WindowsForms10.Window.8.app.0.2bf8098_r8_ad1:MusicBee.exe"
+                "window": "Lady Gaga - LoveGame - MusicBee:WindowsForms10.Window.8.app.0.2bf8098_r8_ad1:MusicBee.exe"
             },
             "mixers": 201,
             "sync": 0,
             "flags": 0,
-            "volume": 0.3162277638912201,
+            "volume": 0.25118863582611084,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -4293,8 +4378,8 @@
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
-                "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.show_scene_item.4": [],
+                "libobs.hide_scene_item.4": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -4310,15 +4395,15 @@
             "versioned_id": "droidcam_obs",
             "settings": {
                 "device_list": "dev_id_wifi",
-                "resolution_str": "1920x1080",
-                "enable_aduio": false,
                 "cur_dev_id": "dev_id_wifi",
                 "cur_dev_type": 1,
-                "activated": true,
-                "deactivate_wns": true,
                 "wifi_ip": "100.75.88.108",
                 "cur_dev_ip": "100.75.88.108",
-                "remote_url": "http://100.75.88.108:4747"
+                "remote_url": "",
+                "activated": true,
+                "enable_aduio": false,
+                "deactivate_wns": true,
+                "resolution_str": "1920x1080"
             },
             "mixers": 255,
             "sync": 0,
@@ -4326,7 +4411,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
