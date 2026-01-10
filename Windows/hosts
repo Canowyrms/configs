@@ -24,14 +24,16 @@
 # My Devices
 # ----------------------
 
-2604:3d09:8676:f900::3960 pi.hole pi-hole
-10.0.0.92                 pi.hole pi-hole
+fdca:3be8:3d34::92        pi.hole pi-hole pihole
+10.0.0.92                 pi.hole pi-hole pihole
 
-#2604:3d09:8676:f900::52c7 desktop.local
+fdca:3be8:3d34::194       desktop.local
 10.0.0.194                desktop.local
 
-#2604:3d09:8676:f900::d890 laptop.local
-10.0.0.132                laptop.local
+fdca:3be8:3d34::132       laptop.local # Ethernet
+fdca:3be8:3d34::196       laptop.local # WiFi
+10.0.0.132                laptop.local # Ethernet
+10.0.0.196                laptop.local # WiFi
 
 
 # ----------------------
