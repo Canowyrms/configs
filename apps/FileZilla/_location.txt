@@ -1,1 +1,1 @@
-junction config => C:\Users\BK\scoop\persist\filezilla\config
+junction config => C:\Users\BK\scoop\persist\filezilla\data\config
