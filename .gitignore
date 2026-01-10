@@ -34,6 +34,8 @@
 
 # SVP
 /apps/SVP/settings/*.lic
+/apps/SVP/settings/tube.cfg
+/apps/SVP/settings/ui.cfg
 
 # VSCode
 /apps/VSCode/User/*
