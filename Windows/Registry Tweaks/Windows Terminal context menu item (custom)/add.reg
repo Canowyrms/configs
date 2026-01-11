@@ -8,6 +8,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\background\shell\BM_Terminal\command]
 @="wt.exe -d \"%V\""
 
+
 [HKEY_CLASSES_ROOT\Directory\shell\BM_Terminal]
 @="Terminal Here"
 "NoWorkingDirectory"=""
@@ -16,13 +17,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\BM_Terminal\command]
 @="wt.exe -d \"%V\""
 
-[HKEY_CLASSES_ROOT\Drive\Background\shell\BM_Terminal]
-@="Terminal Here"
-"NoWorkingDirectory"=""
-"Icon"="C:\\Users\\BK\\Pictures\\Icons\\terminal.ico"
-
-[HKEY_CLASSES_ROOT\Drive\Background\shell\BM_Terminal\command]
-@="wt.exe -d \"%V\""
 
 [HKEY_CLASSES_ROOT\Drive\shell\BM_Terminal]
 @="Terminal Here"
