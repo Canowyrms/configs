@@ -169,7 +169,7 @@
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\Program Files (x86)\Steam\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
 
 <!-- ProgramData -->
-<excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\ProgramData\Jellyfin\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
+<!-- <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\ProgramData\Jellyfin\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" /> -->
 
 <!-- Misc root Dirs -->
 <excludefname_rule plat="win" osVers="*"  ruleIsOptional="t" skipFirstCharThenStartsWith=":\_temp\" contains_1="*" contains_2="*" doesNotContain="*" endsWith="*" hasFileExtension="*" />
