@@ -2,7 +2,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\background\shell\BM_PowerShell]
 @="Open in PowerShell"
-"Icon"="C:\\Users\\BK\\Pictures\\Icons\\Extracted\\PowerShell.ico"
+"Icon"="C:\\Users\\BK\\Pictures\\Icons\\In use\\PowerShell.ico"
 
 [HKEY_CLASSES_ROOT\Directory\background\shell\BM_PowerShell\command]
 @="\"C:\\Users\\BK\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe\" -p PowerShell -d \"%V\""
@@ -10,7 +10,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\BM_PowerShell]
 @="Open in PowerShell"
-"Icon"="C:\\Users\\BK\\Pictures\\Icons\\Extracted\\PowerShell.ico"
+"Icon"="C:\\Users\\BK\\Pictures\\Icons\\In use\\PowerShell.ico"
 
 [HKEY_CLASSES_ROOT\Directory\shell\BM_PowerShell\command]
 @="\"C:\\Users\\BK\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe\" -p PowerShell -d \"%V\""
@@ -18,7 +18,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Drive\shell\BM_PowerShell]
 @="Open in PowerShell"
-"Icon"="C:\\Users\\BK\\Pictures\\Icons\\Extracted\\PowerShell.ico"
+"Icon"="C:\\Users\\BK\\Pictures\\Icons\\In use\\PowerShell.ico"
 
 [HKEY_CLASSES_ROOT\Drive\shell\BM_PowerShell\command]
 @="\"C:\\Users\\BK\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe\" -p PowerShell -d \"%V\""
