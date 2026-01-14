@@ -3,3 +3,5 @@ junction portable_config => C:\Users\BK\AppData\Roaming\mpv
 
 hardlink portable_config/scripts/thumbfast.lua <=> C:\Users\BK\code\repos\mpv-thumbfast\thumbfast.lua
 hardlink portable_config/scripts/osc.lua <=> C:\Users\BK\code\repos\mpv-thumbfast-vanilla-osc\player\osc.lua
+
+hardlink conf.json <=> C:\Users\BK\AppData\Roaming\jellyfin-mpv-shim\conf.json
