@@ -263,6 +263,7 @@ include "/usr/share/nano/*.nanorc"
 # ----------------------
 # Improved Nano Syntax Highlighting Files
 # https://github.com/scopatz/nanorc
+# https://github.com/galenguyer/nano-syntax-highlighting
 # ----------------------
 
 ## Disable the package by commenting-out the following line:
