@@ -4,10 +4,11 @@
 
 
 # Start Caddy fileserver in current directory.
+# port 9000 is forwarded on the router.
 # ----------------------
 
 function caddy-fileserver () {
-	caddy file-server --listen :80 --browse
+	caddy file-server --listen :9000 --browse
 }
 
 
@@ -66,4 +67,25 @@ function start-phpcgi () {
 function start-phpserver () {
 	local port="${1:-3000}";
 	php -S "localhost:${port}";
+}
+
+
+# `git pull` all repos in cwd or specified dir
+# ----------------------
+
+function update-repos () {
+	dir="*/";
+
+	#[ -d ${1} ] && dir="${1}/*/";
+	[ -d ${1} ] && dir="$(echo "${1}" | sed 's#/*$##')/*/";
+
+	#echo ${dir}
+
+	for dir in ${dir}; do
+		if [ -d "$dir/.git" ]; then
+			echo "Updating: $dir"
+			git -C "$dir" pull
+			echo
+		fi
+	done
 }
