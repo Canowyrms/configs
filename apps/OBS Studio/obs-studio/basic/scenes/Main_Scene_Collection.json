@@ -325,6 +325,35 @@
                 "flags": 0,
                 "volume": 1.0,
                 "balance": 0.5,
+                "enabled": false,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 536870916,
+                "name": "Noise Gate v3",
+                "uuid": "a8e38494-54a9-499e-9d7c-9b580610c37f",
+                "id": "noise_gate_filter",
+                "versioned_id": "noise_gate_filter",
+                "settings": {
+                    "open_threshold": -32.0,
+                    "close_threshold": -38.0,
+                    "attack_time": 15,
+                    "hold_time": 300
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
                 "enabled": true,
                 "muted": false,
                 "push-to-mute": false,
@@ -395,8 +424,8 @@
             }
         ]
     },
-    "current_scene": "🎬 ❗ PRIMARY DISPLAY ❗",
-    "current_program_scene": "🎬 ❗ PRIMARY DISPLAY ❗",
+    "current_scene": "⚠ Scene Dev",
+    "current_program_scene": "⚠ Scene Dev",
     "scene_order": [
         {
             "name": "⚠ Scene Dev"
@@ -1165,7 +1194,7 @@
             "versioned_id": "monitor_capture",
             "settings": {
                 "method": 2,
-                "monitor_id": "\\\\?\\DISPLAY#SAM105C#5&2ae8afa3&0&UID4357#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+                "monitor_id": "\\\\?\\DISPLAY#SAM105C#5&2ae8afa3&2&UID4357#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
             },
             "mixers": 0,
             "sync": 0,
@@ -2085,7 +2114,7 @@
                     {
                         "name": "🎵 MPC",
                         "source_uuid": "f5696fdf-e03d-4564-a6df-4f6de856373d",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -2305,7 +2334,7 @@
                     {
                         "name": "Media",
                         "source_uuid": "f5cdaf7f-4b4f-46b3-950c-986a44ffa480",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -2417,7 +2446,7 @@
                     {
                         "name": "🔊 App Brave",
                         "source_uuid": "ee03c117-6604-460c-8528-253648187444",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -2685,7 +2714,7 @@
             "mixers": 9,
             "sync": 0,
             "flags": 0,
-            "volume": 0.5011872053146362,
+            "volume": 0.25118863582611084,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -2711,7 +2740,7 @@
                     "id": "limiter_filter",
                     "versioned_id": "limiter_filter",
                     "settings": {
-                        "threshold": -12.0
+                        "threshold": -10.0
                     },
                     "mixers": 255,
                     "sync": 0,
@@ -2745,7 +2774,7 @@
             "mixers": 9,
             "sync": 0,
             "flags": 0,
-            "volume": 0.6309573650360107,
+            "volume": 0.1258925497531891,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -2762,7 +2791,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Limiter",
+                    "uuid": "4e653a4a-3b7f-4123-bd84-8d31d29b6dec",
+                    "id": "limiter_filter",
+                    "versioned_id": "limiter_filter",
+                    "settings": {
+                        "threshold": -10.0
+                    },
+                    "mixers": 255,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -2794,7 +2851,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Limiter",
+                    "uuid": "959957c8-f05e-4736-93a9-da60987de568",
+                    "id": "limiter_filter",
+                    "versioned_id": "limiter_filter",
+                    "settings": {
+                        "threshold": -10.0
+                    },
+                    "mixers": 255,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -2826,7 +2911,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Limiter",
+                    "uuid": "3d54e92f-7054-48d0-abe8-6c3c347516c9",
+                    "id": "limiter_filter",
+                    "versioned_id": "limiter_filter",
+                    "settings": {
+                        "threshold": -10.0
+                    },
+                    "mixers": 255,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -3772,7 +3885,7 @@
             "id": "wasapi_process_output_capture",
             "versioned_id": "wasapi_process_output_capture",
             "settings": {
-                "window": "Even I’M Jealous of These Guys - Reacting to r/HomeLab - YouTube and 18 more pages - Personal - Microsoft​ Edge:Chrome_WidgetWin_1:msedge.exe"
+                "window": "Discord - • Discord | #22random-media-posts | Hologram's Fan Cafe:Chrome_WidgetWin_1:msedge.exe"
             },
             "mixers": 192,
             "sync": 0,
@@ -3794,7 +3907,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Limiter",
+                    "uuid": "49526463-459c-4d03-afa9-31fe67688bdc",
+                    "id": "limiter_filter",
+                    "versioned_id": "limiter_filter",
+                    "settings": {
+                        "threshold": -10.0
+                    },
+                    "mixers": 255,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -3805,7 +3946,7 @@
             "settings": {
                 "priority": 0,
                 "undo_suuid": "5a299399-ce01-4bd2-959e-c0e0b54b806b",
-                "window": "#22gif-channel | Home of the Fam Squad - Discord:Chrome_WidgetWin_1:Discord.exe"
+                "window": "#22the-common-room | Home of the Fam Squad - Discord:Chrome_WidgetWin_1:Discord.exe"
             },
             "mixers": 209,
             "sync": 0,
@@ -3895,8 +4036,174 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 19,
-                "items": []
+                "id_counter": 24,
+                "items": [
+                    {
+                        "name": "🎬 ❗ ANY FULLSCREEN ❗",
+                        "source_uuid": "5b6f61c0-3d99-4425-9025-b285bff20449",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 22,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "🚿 veadotube",
+                        "source_uuid": "e5d417ac-e73c-4148-b65b-00a2254d6af0",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 21,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1817.0,
+                            "y": 791.0
+                        },
+                        "pos_rel": {
+                            "x": 0.7458333373069763,
+                            "y": 0.09861111640930176
+                        },
+                        "scale": {
+                            "x": 1.3520835638046265,
+                            "y": 1.3520835638046265
+                        },
+                        "scale_rel": {
+                            "x": 1.0140626430511475,
+                            "y": 1.0140626430511475
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "🖼 Thirds Overlay",
+                        "source_uuid": "deb17781-44e1-433c-8553-08d3d77db381",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 2560.0,
+                            "y": 1440.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 23,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
             },
             "mixers": 0,
             "sync": 0,
@@ -3910,7 +4217,13 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": []
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.22": [],
+                "libobs.hide_scene_item.22": [],
+                "libobs.show_scene_item.21": [],
+                "libobs.hide_scene_item.21": [],
+                "libobs.show_scene_item.23": [],
+                "libobs.hide_scene_item.23": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -3947,7 +4260,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Limiter",
+                    "uuid": "0ea532b6-c1bd-4bff-a135-42c47a27507b",
+                    "id": "limiter_filter",
+                    "versioned_id": "limiter_filter",
+                    "settings": {
+                        "threshold": -10.0
+                    },
+                    "mixers": 255,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -4463,7 +4804,7 @@
                 "deactivate_wns": true,
                 "resolution_str": "1920x1080"
             },
-            "mixers": 255,
+            "mixers": 192,
             "sync": 0,
             "flags": 0,
             "volume": 1.0,
@@ -4480,6 +4821,91 @@
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": []
             },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "🚿 veadotube",
+            "uuid": "e5d417ac-e73c-4148-b65b-00a2254d6af0",
+            "id": "spout_capture",
+            "versioned_id": "spout_capture",
+            "settings": {
+                "compositemode": 3,
+                "spoutsenders": "veadotube mini"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Crop/Pad",
+                    "uuid": "c78f975c-7274-447b-bf03-99d6d3e2c8b3",
+                    "id": "crop_filter",
+                    "versioned_id": "crop_filter",
+                    "settings": {
+                        "left": 240,
+                        "top": 40,
+                        "right": 240,
+                        "bottom": 20
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "🖼 Thirds Overlay",
+            "uuid": "deb17781-44e1-433c-8553-08d3d77db381",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "C:/Users/BK/Desktop/Stream Resources/Thirds overlay.png",
+                "unload": true
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
@@ -4557,7 +4983,7 @@
                     {
                         "name": "🎵 MPC",
                         "source_uuid": "f5696fdf-e03d-4564-a6df-4f6de856373d",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -4875,7 +5301,7 @@
                     {
                         "name": "🔊 App Brave",
                         "source_uuid": "ee03c117-6604-460c-8528-253648187444",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
