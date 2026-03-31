@@ -30,6 +30,9 @@
 	"chat.commandCenter.enabled": false,
 	"chat.disableAIFeatures": true,
 	"chat.mcp.access": "none",
+	"chat.sendElementsToChat.attachCSS": false,
+	"chat.sendElementsToChat.attachImages": false,
+	"chat.sendElementsToChat.enabled": false,
 
 	"colorInfo.languages": [
 		{
@@ -58,6 +61,8 @@
 		}
 	],
 
+	"debug.breakpointsView.presentation": "tree",
+
 	"diffEditor.ignoreTrimWhitespace": false,
 	"diffEditor.maxComputationTime": 0,
 	"diffEditor.renderSideBySide": true,
@@ -69,6 +74,7 @@
 	"editor.find.seedSearchStringFromSelection": "selection",
 	"editor.fontFamily": "'0xProto Nerd Font', 'FiraCode Nerd Font', 'Fira Code', Consolas, 'Courier New', monospace",
 	"editor.fontLigatures": true,
+	/* "editor.fontSize": 12, */
 	/* "editor.formatOnPaste": true, */
 	/* "editor.formatOnSave": true, */
 	"editor.insertSpaces": false,
@@ -102,6 +108,7 @@
 		"ms-vscode-remote.remote-wsl": 1,
 		"oxc.oxc-vscode": 1,
 		"prettier.prettier-vscode": 1,
+		"revilowaldow.5etools-language-server": 1,
 		"st-pham.php-refactor-tool": 1,
 		"vsls-contrib.gistfs": 1,
 	},
@@ -194,7 +201,7 @@
 	"terminal.integrated.persistentSessionReviveProcess": "never",
 	"terminal.integrated.tabs.location": "left",
 	
-	"workbench.colorTheme": "Default Dark+",
+	"workbench.colorTheme": "Dark+",
 	"workbench.editor.focusRecentEditorAfterClose": false,
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.iconTheme": "vscode-icons",
