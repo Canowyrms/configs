@@ -3,6 +3,9 @@
 # Browser extensions
 "/browser-ext/**/*" filter=git-crypt diff=git-crypt
 
+# cross-seed
+"/apps/cross-seed/**/*" filter=git-crypt diff=git-crypt
+
 # FileZilla
 "/apps/FileZilla/config/*.xml" filter=git-crypt diff=git-crypt
 
