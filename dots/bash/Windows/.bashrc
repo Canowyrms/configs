@@ -34,7 +34,8 @@ HISTSIZE=10000
 HISTFILESIZE=20000
 
 # immediately append history
-PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+#PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+PROMPT_COMMAND+=("history -a")
 
 
 # ----------------------
