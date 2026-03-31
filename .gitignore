@@ -21,6 +21,7 @@
 # OBS Studio
 /apps/OBS Studio/obs-studio/*
 !/apps/OBS Studio/obs-studio/global.ini
+!/apps/OBS Studio/obs-studio/user.ini
 !/apps/OBS Studio/obs-studio/basic/
 /apps/OBS Studio/obs-studio/basic/**/*.bak
 /apps/OBS Studio/obs-studio/basic/**/service.json
