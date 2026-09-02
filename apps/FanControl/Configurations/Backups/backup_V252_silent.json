@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "268",
+  "__VERSION__": "262",
   "FanControl": {
     "Controls": [
       {
@@ -7,9 +7,7 @@
         "Identifier": "/lpc/nct6793d/control/0",
         "IsHidden": false,
         "Enable": true,
-        "SelectedFanCurve": {
-          "Name": "GPU Stepped"
-        },
+        "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "PairedFanSensor": {
           "Identifier": "/lpc/nct6793d/fan/0"
@@ -19,7 +17,7 @@
         "MinimumPercent": 0,
         "SelectedCommandStepUp": 10,
         "SelectedCommandStepDown": 5,
-        "ManualControlValue": 60,
+        "ManualControlValue": 0,
         "ManualControl": true,
         "ForceApply": false,
         "Calibration": null
@@ -121,7 +119,7 @@
         "MinimumPercent": 0,
         "SelectedCommandStepUp": 12,
         "SelectedCommandStepDown": 5,
-        "ManualControlValue": 60,
+        "ManualControlValue": 30,
         "ManualControl": true,
         "ForceApply": false,
         "Calibration": null
@@ -445,13 +443,7 @@
         "NickName": "Fan 2 - NVIDIA GeForce RTX 2070 SUPER"
       }
     ],
-    "TemperatureSensors": [
-      {
-        "Identifier": "/nvme/0/temperature/0",
-        "IsHidden": false,
-        "NickName": "Composite Temperature"
-      }
-    ]
+    "TemperatureSensors": []
   },
   "Sensors": {
     "AdlxWrapperSettings": {
@@ -466,7 +458,6 @@
       "GPU": true,
       "Memory": true,
       "Motherboard": true,
-      "PowerMonitor": false,
       "PSU": false,
       "Storage": true,
       "StorageUpdateInterval": "00:01:00",

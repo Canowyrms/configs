@@ -1,15 +1,14 @@
 {
-  "__VERSION__": "268",
-  "FanControl": {
+  "__VERSION__": "245",
+  "Main": {
     "Controls": [
       {
+        "Name": "Fan #1",
         "NickName": "Intake",
         "Identifier": "/lpc/nct6793d/control/0",
         "IsHidden": false,
         "Enable": true,
-        "SelectedFanCurve": {
-          "Name": "GPU Stepped"
-        },
+        "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "PairedFanSensor": {
           "Identifier": "/lpc/nct6793d/fan/0"
@@ -19,12 +18,13 @@
         "MinimumPercent": 0,
         "SelectedCommandStepUp": 10,
         "SelectedCommandStepDown": 5,
-        "ManualControlValue": 60,
+        "ManualControlValue": 0,
         "ManualControl": true,
         "ForceApply": false,
         "Calibration": null
       },
       {
+        "Name": "Fan #2",
         "NickName": "CPU",
         "Identifier": "/lpc/nct6793d/control/1",
         "IsHidden": false,
@@ -47,6 +47,7 @@
         "Calibration": null
       },
       {
+        "Name": "Fan #3",
         "NickName": "GPU",
         "Identifier": "/lpc/nct6793d/control/2",
         "IsHidden": false,
@@ -69,6 +70,7 @@
         "Calibration": null
       },
       {
+        "Name": "Fan #4",
         "NickName": "Fan Control #4",
         "Identifier": "/lpc/nct6793d/control/3",
         "IsHidden": true,
@@ -87,6 +89,7 @@
         "Calibration": null
       },
       {
+        "Name": "Fan #5",
         "NickName": "Fan Control #5",
         "Identifier": "/lpc/nct6793d/control/4",
         "IsHidden": true,
@@ -105,6 +108,7 @@
         "Calibration": null
       },
       {
+        "Name": "Fan #6",
         "NickName": "Rear Exhaust",
         "Identifier": "/lpc/nct6793d/control/5",
         "IsHidden": false,
@@ -121,12 +125,13 @@
         "MinimumPercent": 0,
         "SelectedCommandStepUp": 12,
         "SelectedCommandStepDown": 5,
-        "ManualControlValue": 60,
+        "ManualControlValue": 30,
         "ManualControl": true,
         "ForceApply": false,
         "Calibration": null
       },
       {
+        "Name": "Control 1 - NVIDIA GeForce RTX 2070 SUPER",
         "NickName": "Control 1 - NVIDIA GeForce RTX 2070 SUPER",
         "Identifier": "NVApiWrapper/0-TU104-A/control/0",
         "IsHidden": true,
@@ -147,6 +152,7 @@
         "Calibration": null
       },
       {
+        "Name": "Control 2 - NVIDIA GeForce RTX 2070 SUPER",
         "NickName": "Control 2 - NVIDIA GeForce RTX 2070 SUPER",
         "Identifier": "NVApiWrapper/0-TU104-A/control/1",
         "IsHidden": true,
@@ -169,6 +175,7 @@
     ],
     "CustomSensors": [
       {
+        "Name": "Mix Sensor",
         "NickName": "Mix Sensor",
         "Identifier": "Mix/Mix Sensor",
         "IsHidden": false,
@@ -187,17 +194,19 @@
         "SelectedTempSource": {
           "Identifier": "/intelcpu/0/temperature/8"
         },
+        "Name": "CPU Average",
         "NickName": "CPU Average",
         "Identifier": "Time/CPU Average",
         "IsHidden": false,
         "SelectedTime": 3
       }
     ],
+    "Fahrenheit": false,
     "FanCurves": [
       {
+        "CommandMode": 0,
         "Name": "Intake Graph",
         "IsHidden": false,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Mix/Mix Sensor"
         },
@@ -220,9 +229,9 @@
         }
       },
       {
+        "CommandMode": 0,
         "Name": "CPU Graph",
         "IsHidden": true,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Time/CPU Average"
         },
@@ -242,9 +251,9 @@
         }
       },
       {
+        "CommandMode": 0,
         "Name": "GPU Graph",
         "IsHidden": true,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "NVApiWrapper/0-TU104-A/sensor/0"
         },
@@ -265,9 +274,9 @@
         }
       },
       {
+        "CommandMode": 0,
         "Name": "Exhaust Graph",
         "IsHidden": true,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Mix/Mix Sensor"
         },
@@ -287,9 +296,9 @@
         }
       },
       {
+        "CommandMode": 0,
         "Name": "CPU Stepped",
         "IsHidden": true,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Time/CPU Average"
         },
@@ -317,9 +326,9 @@
         }
       },
       {
+        "CommandMode": 0,
         "Name": "CPU Stepped 2",
         "IsHidden": false,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Time/CPU Average"
         },
@@ -345,9 +354,9 @@
         }
       },
       {
+        "CommandMode": 0,
         "Name": "GPU Stepped",
         "IsHidden": false,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "NVApiWrapper/0-TU104-A/sensor/0"
         },
@@ -373,9 +382,9 @@
         }
       },
       {
+        "CommandMode": 0,
         "Name": "Exhaust Stepped",
         "IsHidden": false,
-        "CommandMode": 0,
         "SelectedTempSource": {
           "Identifier": "Mix/Mix Sensor"
         },
@@ -407,51 +416,64 @@
       {
         "Identifier": "/lpc/nct6793d/fan/0",
         "IsHidden": false,
+        "Name": "Fan #1",
         "NickName": "Intake"
       },
       {
         "Identifier": "/lpc/nct6793d/fan/1",
         "IsHidden": false,
+        "Name": "Fan #2",
         "NickName": "CPU"
       },
       {
         "Identifier": "/lpc/nct6793d/fan/2",
         "IsHidden": false,
+        "Name": "Fan #3",
         "NickName": "GPU"
       },
       {
         "Identifier": "/lpc/nct6793d/fan/3",
         "IsHidden": true,
+        "Name": "Fan #4",
         "NickName": "Fan #4"
       },
       {
         "Identifier": "/lpc/nct6793d/fan/4",
         "IsHidden": true,
+        "Name": "Fan #5",
         "NickName": "Fan #5"
       },
       {
         "Identifier": "/lpc/nct6793d/fan/5",
         "IsHidden": false,
+        "Name": "Fan #6",
         "NickName": "Rear Exhaust"
       },
       {
         "Identifier": "NVApiWrapper/0-TU104-A/fan/0",
         "IsHidden": true,
+        "Name": "Fan 1 - NVIDIA GeForce RTX 2070 SUPER",
         "NickName": "Fan 1 - NVIDIA GeForce RTX 2070 SUPER"
       },
       {
         "Identifier": "NVApiWrapper/0-TU104-A/fan/1",
         "IsHidden": true,
+        "Name": "Fan 2 - NVIDIA GeForce RTX 2070 SUPER",
         "NickName": "Fan 2 - NVIDIA GeForce RTX 2070 SUPER"
       }
     ],
-    "TemperatureSensors": [
-      {
-        "Identifier": "/nvme/0/temperature/0",
-        "IsHidden": false,
-        "NickName": "Composite Temperature"
-      }
-    ]
+    "HideCalibration": false,
+    "HideFanSpeedCards": true,
+    "HorizontalUIOrientation": false,
+    "PrimaryColor": "#FF607D8B",
+    "SecondaryColor": "#FFAEEA00",
+    "SelectedTheme": "Dark",
+    "ShowHiddenCards": false,
+    "SyncThemeWithWindows": false,
+    "SyncTrayIconColorWithWindows": false,
+    "TemperatureSensors": [],
+    "TrayIconColor": "#FFFFFFFF",
+    "TrayIcons": []
   },
   "Sensors": {
     "AdlxWrapperSettings": {
@@ -466,29 +488,13 @@
       "GPU": true,
       "Memory": true,
       "Motherboard": true,
-      "PowerMonitor": false,
       "PSU": false,
       "Storage": true,
-      "StorageUpdateInterval": "00:01:00",
       "ZeroRPMOverride": false
     },
     "NvAPIWrapperSettings": {
       "Enabled": true,
       "ZeroRPMOverride": false
     }
-  },
-  "MainWindow": {
-    "Fahrenheit": false,
-    "HideCalibration": false,
-    "HideFanSpeedCards": true,
-    "HorizontalUIOrientation": false,
-    "PrimaryColor": "#FF607D8B",
-    "SecondaryColor": "#FFAEEA00",
-    "SelectedTheme": "Dark",
-    "ShowHiddenCards": false,
-    "SyncThemeWithWindows": false,
-    "SyncTrayIconColorWithWindows": false,
-    "TrayIconColor": "#FFFFFFFF",
-    "TrayIcons": []
   }
 }
